@@ -1,0 +1,66 @@
+# Write as Rain
+
+> Careful, honest editing for manuscripts, applications, and everything in between. Proofreading, copyediting, developmental editing, ebook and print formatting, academic editing, and professional writing services. Run by Ben Robart, based in the UK, working worldwide. Editing services start with a free sample edit; writing services start with a free honest assessment.
+
+NOTE: replace REPLACE-DOMAIN in the links below with the live domain once chosen.
+
+Key facts:
+
+- Contact: robartben@gmail.com, or +44 7921 835288
+- Response time: usually within one working day
+- Sending files: the enquiry form takes no attachments. Send documents by email, or include a Google Drive or WeTransfer link in the message.
+- Privacy: no data is stored unless you get in touch, and then it is used only for your enquiry. No newsletters, and details are never shared with third parties. The site is hosted by GitHub and the contact form uses Formspree.
+- Pricing model: flat prices agreed up front before any paid work begins
+- Free sample: the first 1,000 words edited free for proofreading, copyediting, and academic editing (abstract plus first 500 words for academic papers); a free synopsis assessment for developmental editing. Writing services get a free honest assessment instead: a CV review before any payment, a personal statement draft assessment, a free go/no-go check on funds for grant and bid work, and a free sample LinkedIn post for ghostwriting clients.
+- Service order for manuscripts: developmental editing first (early draft), copyediting second (settled structure), proofreading last (pre-publication). Copyediting includes a full proofread; developmental editing includes neither, as the draft will still change.
+- All editing delivered with tracked changes; queries raised as comments, never silent rewrites
+
+## Manuscript Editing
+
+Base prices cover manuscripts up to 60,000 words; longer works add a per-1,000-word rate.
+
+- Proofreading: £250, then £4 per additional 1,000 words. The final stage of editing and the last opportunity for corrections: spelling and punctuation, sequential page numbers, widows and orphans removed, typography and layout inconsistencies, contents page cross-checks, running heads, and hyphenation errors.
+- Copyediting: £350, then £6 per additional 1,000 words. A sentence-by-sentence edit: word choice, rhythm, and clarity; consistency of spelling conventions, hyphenation, capitalisation, numbers, and tense; factual inconsistencies flagged; readability improved without flattening the author's voice. Delivered with tracked changes and a style sheet. Includes a full proofread.
+- Developmental / Structural Editing: £400, then £7 per additional 1,000 words. In-depth feedback on an early draft: concept, structure, flow, consistency, style, point of view, character, dialogue, plot believability, subplots, chapter order, and scene purpose. Delivered as a written editorial report with margin annotations. A feedback service: does not include copyediting or proofreading.
+- Submission Package: £150. Query letter, one-page synopsis, and a critique of the opening chapter, tailored to UK or US submission conventions.
+- Ebook & Print Formatting: £75 for a validated EPUB 3 file (the current universal ebook format; Amazon retired MOBI), or £150 including a print-ready PDF interior for KDP Print and IngramSpark. Working table of contents, front and back matter, and source files supplied.
+
+## Academic
+
+- Academic Editing: from £15 per 1,000 words. Journal-standard language editing, particularly for researchers writing in English as a second language. Citation style consistency (APA, Harvard, Vancouver, or journal-specific), formatting to author guidelines, and response-to-reviewers polishing. Confidential as standard.
+- Dissertation Coaching: £50 per session. Structure, argumentation, and clarity support for undergraduate and Masters dissertations. Guidance and feedback only, strictly within academic integrity rules; never ghostwriting.
+
+## Applications & Careers
+
+- Personal Statements & Application Essays: from £100. Editing and coaching for UCAS, Oxbridge, postgraduate, and US college applications. The applicant's own draft, edited and strengthened; never written for them.
+- CVs & LinkedIn Profiles: £75 for a CV rewrite, £120 for CV and LinkedIn profile together. Rewritten for the target role, quantified achievements, formatted for applicant tracking software, two rounds of revisions included.
+
+## Business & Occasions
+
+- Grant & Bid Writing: from £300 per bid. Funding applications and tenders for small charities and SMEs, answering funder guidance point by point and framed the way assessors score. Editing of existing drafts at a reduced rate.
+- Executive Ghostwriting: from £500 per month. LinkedIn posts and newsletters written in the client's voice on a monthly retainer, with sign-off on every word and full confidentiality.
+- Speeches for Occasions: from £100. Wedding speeches, eulogies, retirement toasts, and best man material, written from a conversation about the person and structured for speaking aloud, timed to the slot, with delivery notes.
+
+## Pages
+
+- [Services](https://REPLACE-DOMAIN/#services): full breakdowns and prices for every service.
+- [Who I help](https://REPLACE-DOMAIN/#who-i-help): index of the audience-specific pages listed below.
+- [How it works](https://REPLACE-DOMAIN/#process): free sample or assessment, flat quote, the edit, aftercare.
+- [About](https://REPLACE-DOMAIN/#about): who's doing the editing.
+- [Common questions](https://REPLACE-DOMAIN/#faq): editing types compared, costs, turnaround, file formats, British vs American English, and the no-AI policy.
+- [Contact](https://REPLACE-DOMAIN/#contact): enquiry form and email.
+
+## Audience-specific pages
+
+Each page covers one audience's problem in depth and carries its own FAQ.
+
+- [Copyediting for self-published romance authors](https://REPLACE-DOMAIN/romance-editor.html): series bibles carried across books, heat level never altered by the editor, trope literacy, dual-POV voice separation, and turnaround that fits a rapid release schedule. Copyediting from £350.
+- [Fantasy and sci-fi editing](https://REPLACE-DOMAIN/fantasy-scifi-editor.html): a worldbuilding glossary recording every invented proper noun with its plural, possessive, capitalisation and italicisation; magic and technology system continuity checks; travel-time and timeline tracking; multi-POV maps; honest guidance on debut length. Published price table up to 150,000 words.
+- [Agent submission help](https://REPLACE-DOMAIN/agent-submission-help.html): diagnosing whether the query letter, the synopsis or the opening chapters are causing rejections; query letter structure; comp titles; genre word-count expectations; UK vs US submission conventions. Submission package £150.
+- [Journal English language editing](https://REPLACE-DOMAIN/journal-english-editing.html): for researchers desk-rejected on quality of English. Science never altered, reference style consistency, formatting to author guidelines, response-to-reviewers letters, free certificate of editing on request, confidentiality and embargo work. From £15 per 1,000 words.
+- [PhD thesis and dissertation proofreading](https://REPLACE-DOMAIN/phd-thesis-proofreading.html): worked within the student's own university proofreading policy, with an explicit list of what will and will not be changed, cross-reference and numbering checks, and post-viva corrections. From £250.
+- [UCAS personal statement help](https://REPLACE-DOMAIN/ucas-personal-statement.html): the three-question format introduced for 2026 entry, evidence over adjectives, why statements are edited and never written for the applicant, UCAS similarity detection, and AI use. From £100, free first assessment.
+- [CV writing for career changers](https://REPLACE-DOMAIN/cv-writing-career-change.html): what applicant tracking software actually does (parsing and search, not silent rejection), formatting that breaks parsing, reframing experience in the target sector's vocabulary, achievements with numbers, matching LinkedIn profile. £75, or £120 with LinkedIn.
+- [Grant writing for small charities](https://REPLACE-DOMAIN/grant-writing-charities.html): funder guidance read as a scoring rubric, outputs versus outcomes, the case for support, full cost recovery, and a free go/no-go check. Fixed fee from £300 per bid, never commission or a percentage of funds raised.
+- [Wedding and best man speech writing](https://REPLACE-DOMAIN/wedding-speech-writer.html): written from a conversation rather than a questionnaire, five-minute target, the line between affectionate and cruel, room-reading, delivery notes. Also father of the bride, groom, and maid of honour speeches. From £100.
+- [Help writing a eulogy](https://REPLACE-DOMAIN/eulogy-writing.html): one conversation, short notice treated as normal, three to five minutes, pause points marked for reading aloud, complicated relationships handled honestly, religious or humanist or neither. From £100, and free if a conversation is all that is needed.

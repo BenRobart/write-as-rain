@@ -1,0 +1,27 @@
+# Write as Rain - robots.txt
+# All crawlers welcome, AI crawlers included.
+# An LLM-friendly summary of this site lives at /llms.txt
+# BEFORE LAUNCH: replace REPLACE-DOMAIN in the Sitemap line below.
+
+Sitemap: https://REPLACE-DOMAIN/sitemap.xml
+
+User-agent: *
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /

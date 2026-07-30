@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BEFORE LAUNCH: replace every REPLACE-DOMAIN with the live domain, then submit
+     this file in Google Search Console and Bing Webmaster Tools. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/romance-editor.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/fantasy-scifi-editor.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/agent-submission-help.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/journal-english-editing.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/phd-thesis-proofreading.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/ucas-personal-statement.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/cv-writing-career-change.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/grant-writing-charities.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/wedding-speech-writer.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://REPLACE-DOMAIN/eulogy-writing.html</loc>
+    <lastmod>2026-07-30</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

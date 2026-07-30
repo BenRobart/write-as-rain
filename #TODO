@@ -1,0 +1,73 @@
+Best man page - liked the story at the top of the page
+Breadcrumbs are shit
+FAQ shouldn't close others when a new answer is clicked
+Favicon
+Mention of working at TOF
+Logo at top left - Write doesn't line up properly
+
+
+=== BEFORE LAUNCH (blocking) ===
+
+Replace REPLACE-DOMAIN - 82 placeholders across 14 files. Wrong canonical is worse than none.
+  Git Bash: grep -rl 'REPLACE-DOMAIN' . | xargs sed -i 's|REPLACE-DOMAIN|yourdomain.co.uk|g'
+Formspree form ID - index.html still says YOUR_FORM_ID, so the contact form does nothing
+Verify UCAS three-question format against UCAS site before publishing (ucas-personal-statement.html)
+
+
+=== NEW PAGES - ranked by effort vs reward ===
+
+1. Proofreading vs copyediting vs developmental - comparison page
+   Highest-volume query in the sector. Informational so it ranks without fighting
+   commercial intent. Currently buried in a homepage FAQ accordion, which is the
+   worst possible place for it.
+
+2. Pricing page + word count calculator
+   "how much does it cost to edit a book" is high volume AND high intent. Open
+   pricing is a competitive weapon and it's currently hidden. Small JS calculator:
+   enter word count, get all three prices. Earns links, keeps people on page.
+
+3. Book blurb & Amazon description writing
+   New revenue line, low delivery effort, indie authors search it constantly.
+   Natural upsell after a copyedit.
+
+4. Ebook & print formatting / KDP
+   Already offered, distinct search, commercial intent. Currently one accordion item.
+
+5. Memoir & life story
+   Underserved. Older, more affluent, emotionally motivated buyers. Pairs with
+   developmental editing.
+
+6. Cover letters
+   Obvious companion to the CV page. The two cross-link naturally.
+
+7. Crime & thriller editing
+   Completes the genre set alongside romance and SFF.
+
+8. Medicine & dentistry personal statements
+   Very high intent. UK applicants search this separately from generic UCAS help.
+
+
+=== NON-PAGE, HIGHER IMPACT THAN PAGES 7-8 ===
+
+Google Business Profile - currently invisible for "editor near me" searches
+og:image (1200x630) - social shares are plain text everywhere the site gets mentioned
+Submit sitemap.xml to Google Search Console and Bing Webmaster Tools
+
+
+=== COPY ===
+
+Personal anecdotes - biggest remaining gap vs Ben's own writing samples. Site has
+  almost no "I did X" stories (the crossword line is the only one). Can't be
+  invented; needs Ben to supply 5-10 real ones. See notes below.
+Decide on Oxford comma - guidelines contradict themselves (avoid-list vs do-list).
+  Currently inconsistent-but-natural, which is what humans do. Uniform if preferred.
+
+
+=== NOTES ===
+
+FAQ auto-close (item 3 above) was added this session in site.js. One-line revert,
+  just say the word.
+When adding any new page it needs: unique title/description/canonical, BreadcrumbList
+  + Service + FAQPage JSON-LD (FAQ schema must match visible questions exactly),
+  a card in #who-i-help, a footer link, a sitemap.xml entry, an llms.txt entry.
+Styles and scripts are shared - styles.css and site.js. Don't inline them again.
