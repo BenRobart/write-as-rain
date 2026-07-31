@@ -97,7 +97,9 @@ a:hover { text-decoration: underline; }
 .skip-link:focus { left: 12px; top: 12px; }
 
 /* === NAV === */
-nav {
+/* Scoped to the top-level nav on purpose: niche pages also contain a
+   <nav aria-label="Breadcrumb">, which must not be pinned to the viewport. */
+body > nav {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
@@ -107,7 +109,7 @@ nav {
   transition: border-color 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
 }
 
-nav.scrolled {
+body > nav.scrolled {
   border-bottom-color: var(--rule);
   box-shadow: 0 6px 24px -18px rgba(43, 33, 24, 0.7);
   background: color-mix(in srgb, var(--bg) 94%, transparent);
@@ -823,17 +825,51 @@ footer {
    NICHE LANDING PAGES
    ========================================================================== */
 
+/* Sits between the fixed nav and the hero, so it also carries the top offset
+   that clears the nav (64px tall + breathing room). */
 .breadcrumb {
-  font-size: 13px;
-  color: var(--ink-faint);
+  /* Matches .niche-hero-inner so the trail lines up with the h1 below it,
+     rather than hanging off the left edge of the wider .container. */
+  max-width: 760px;
   padding-top: 88px;
+  font-size: 12.5px;
+  letter-spacing: 0.02em;
 }
-.breadcrumb ol { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
-.breadcrumb li::after { content: '›'; margin-left: 8px; color: var(--rule); }
-.breadcrumb li:last-child::after { content: ''; }
-.breadcrumb a { color: var(--ink-faint); }
-.breadcrumb a:hover { color: var(--accent); }
-.breadcrumb [aria-current="page"] { color: var(--ink-soft); }
+.breadcrumb ol {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 10px;
+  line-height: 1.5;
+}
+.breadcrumb li { display: flex; align-items: center; gap: 10px; }
+
+/* Chevron drawn rather than typed, so it sits on the optical centre of the
+   row instead of the serif glyph's baseline. */
+.breadcrumb li:not(:last-child)::after {
+  content: '';
+  flex-shrink: 0;
+  width: 4px; height: 4px;
+  border-top: 1px solid var(--ink-faint);
+  border-right: 1px solid var(--ink-faint);
+  transform: rotate(45deg);
+  opacity: 0.65;
+}
+
+.breadcrumb a { color: var(--ink-soft); transition: color 0.2s ease; }
+.breadcrumb a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.breadcrumb [aria-current="page"] { color: var(--ink); font-weight: 500; }
+
+@media (max-width: 600px) {
+  .breadcrumb { padding-top: 80px; font-size: 12px; }
+  .breadcrumb ol, .breadcrumb li { gap: 2px 8px; }
+}
 
 .niche-hero { padding: 40px 0 72px; }
 .niche-hero-inner { max-width: 760px; }
@@ -865,6 +901,10 @@ footer {
   font-size: 15px;
   color: var(--ink-faint);
 }
+
+/* Separate stacked sub-lines (e.g. a credential line above the price line),
+   which would otherwise run together as one block. */
+.niche-hero .lede-sub + .lede-sub { margin-top: 8px; }
 
 .niche-cta { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -1100,8 +1140,15 @@ details[open] > .faq-a {
   background: color-mix(in srgb, var(--accent) 5%, transparent);
   padding-left: 12px;
 }
-.service-item[open] summary,
-.faq-item[open] summary { padding-left: 12px; }
+/* The indent is a hover affordance only - no [open] rule pins it, so an open
+   panel sits flush unless the pointer is actually on it.
+
+   A tap leaves :hover stuck on touch devices, which would put the indent back
+   by the other route. Real pointers only. */
+@media (hover: none) {
+  .service-item summary:hover,
+  .faq-item summary:hover { padding-left: 6px; }
+}
 
 .service-item summary:hover .service-chev,
 .faq-item summary:hover .faq-chev { color: var(--accent); }
@@ -1164,4 +1211,185 @@ details[open] > .faq-a {
   height: 1px;
   background: var(--accent);
   opacity: 0.6;
+}
+
+/* ==========================================================================
+   ILLUSTRATIONS
+   Line drawings pulled from the sprite site.js injects at the top of <body>,
+   referenced as <svg class="ill" viewBox="0 0 24 24"><use href="#wr-…"></svg>.
+   Nothing in the sprite carries stroke or fill attributes, so colour and line
+   weight are set here — which is what lets one symbol serve a 17px label and a
+   104px page mark without being redrawn. All of it is decorative.
+   ========================================================================== */
+
+.ill {
+  display: block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* The bigger the drawing, the lighter the line. A fixed weight starts reading
+   as a border once the icon is larger than the text around it. */
+.ill-sm   { width: 17px;  height: 17px;  stroke-width: 1.75; }
+.ill-md   { width: 26px;  height: 26px;  stroke-width: 1.35; }
+.ill-mark { width: 30px;  height: 30px;  stroke-width: 1.25; }
+.ill-hd   { width: 20px;  height: 20px;  stroke-width: 1.55; }
+.ill-xl   { width: 104px; height: 104px; stroke-width: 0.75; }
+
+/* Centred ornament above a section heading, and above the closing CTA */
+.section-mark {
+  display: flex;
+  justify-content: center;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+.section-mark .ill { opacity: 0.72; }
+[data-theme="dark"] .section-mark .ill { opacity: 0.82; }
+
+/* Rain falling onto an open book, alongside the homepage hero copy.
+
+   Once the art is on screen the hero is a two-column composition, so text and
+   drawing together fill the same 1040px grid the nav sits on: the copy keeps
+   its 712px measure but aligns left to the grid instead of centring in the
+   viewport, and the art's right edge lands on the grid's right edge. The pair
+   then reads as centred. Left as-is, the text centres on its own and the
+   drawing hangs off the right, pulling the whole hero about 120px off centre. */
+.hero { position: relative; }
+
+@media (min-width: 1160px) {
+  /* width:100% because .hero is a flex container — without it the inner block
+     shrink-wraps its content and never reaches the 1040px cap. */
+  .hero-inner { max-width: 1040px; width: 100%; }
+  .hero-inner > * { max-width: 712px; }
+}
+
+.hero-art {
+  position: absolute;
+  top: 50%;
+  /* 50% + 276px + 220px wide = 50% + 496px, the grid's right content edge */
+  left: calc(50% + 276px);
+  right: 22px;
+  max-width: 220px;
+  height: auto;
+  transform: translateY(-46%);
+  color: var(--accent);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeArt 1.6s ease 0.9s forwards;
+}
+
+@keyframes fadeArt { to { opacity: 1; } }
+
+/* The dark-mode difference sits on the <use>, deliberately not on .hero-art:
+   the fade animates .hero-art's opacity, and giving that property a different
+   value per theme restarts the animation, so the drawing vanished for the
+   0.9s delay and faded back in every time the theme was toggled. Nothing here
+   is animated, so the swap is just a transition. */
+.hero-art use { opacity: 0.32; transition: opacity 0.3s ease; }
+[data-theme="dark"] .hero-art use { opacity: 0.42; }
+
+/* Same idea on the niche pages, using each page's own subject as the mark */
+.niche-hero { position: relative; }
+
+.niche-hero-art {
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translateX(calc(508px - 100%));
+  color: var(--accent);
+  opacity: 0.26;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+[data-theme="dark"] .niche-hero-art { opacity: 0.34; }
+
+/* Below this the 760px text column reaches the space the art would occupy */
+@media (max-width: 1159px) {
+  .hero-art, .niche-hero-art { display: none; }
+}
+
+/* Service group headings */
+.group-label { display: flex; align-items: center; gap: 9px; }
+
+/* One mark per service row. Kept faint so twelve of them down a list read as
+   texture rather than twelve competing accents; it warms up with the row. */
+.service-icon { color: var(--ink-faint); transition: color 0.25s ease; }
+.service-item summary:hover .service-icon,
+.service-item[open] .service-icon { color: var(--accent); }
+
+@media (max-width: 600px) {
+  /* The row wraps on narrow screens, and the icon is just enough extra width to
+     bump the chevron onto a line of its own. A zero flex-basis lets the longest
+     name wrap its own text instead. */
+  .service-name { flex: 1 1 0; }
+}
+
+/* Body headings on the niche pages. Six or seven run down a page, so the mark
+   sits on the first line's baseline: aligning to the baseline rather than the
+   box keeps it put whether the heading runs to one line or two. */
+.prose > h2 { display: flex; align-items: baseline; gap: 12px; }
+.prose > h2 .ill { flex-shrink: 0; color: var(--accent); }
+
+/* Headings that sit inside a bordered block */
+.pain-list h2,
+.related h2 { display: flex; align-items: center; gap: 11px; }
+.pain-list h2 .ill,
+.related h2 .ill { color: var(--accent); }
+
+/* The "free sample" notes are each a single <p>, so the mark rides alongside
+   the text as a flex item. */
+.sample-note { display: flex; align-items: flex-start; gap: 10px; }
+.sample-note .ill { margin-top: 2px; color: var(--accent); }
+
+/* Two columns without needing a wrapper round the paragraphs: the mark takes
+   column one, every <p> is pushed into column two. */
+.callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+}
+.callout .ill { grid-column: 1; grid-row: 1; align-self: start; margin-top: 3px; color: var(--accent); }
+.callout > p { grid-column: 2; }
+
+/* Niche cards on the home page. The icon lifts with the card on hover. */
+.card-icon {
+  color: var(--accent);
+  opacity: 0.65;
+  margin-bottom: 12px;
+  transition: opacity 0.28s ease, transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.niche-card:hover .card-icon { opacity: 1; transform: translateY(-2px); }
+
+/* Nib flanked by hairlines, closing the page off above the footer links */
+.footer-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 26px;
+  color: var(--accent);
+}
+.footer-mark::before,
+.footer-mark::after {
+  content: '';
+  width: 44px;
+  height: 1px;
+  background: var(--rule);
+}
+.footer-mark .ill { opacity: 0.6; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-art { animation: none; opacity: 1; }
+  .niche-card:hover .card-icon { transform: none; }
 }

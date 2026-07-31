@@ -1,16 +1,19 @@
-Best man page - liked the story at the top of the page
-Breadcrumbs are shit
-FAQ shouldn't close others when a new answer is clicked
+DONE - Best man page - liked the story at the top of the page
+DONE - Breadcrumbs are ugly
+DONE - FAQ shouldn't close others when a new answer is clicked
 Favicon
-Mention of working at TOF
-Logo at top left - Write doesn't line up properly
+DONE - Mention of working at TOF
+DONE - Logo at top left - Write doesn't line up properly
+DONE - FAQs - should be indented when hovered, but shouldn't stay indented if they're clicked unless still hovered
+DONE - Homepage SVG disappears when changing between light/dark
+Needs more smaller SVGs throughout the site
 
 
 === BEFORE LAUNCH (blocking) ===
 
 Replace REPLACE-DOMAIN - 82 placeholders across 14 files. Wrong canonical is worse than none.
   Git Bash: grep -rl 'REPLACE-DOMAIN' . | xargs sed -i 's|REPLACE-DOMAIN|yourdomain.co.uk|g'
-Formspree form ID - index.html still says YOUR_FORM_ID, so the contact form does nothing
+DONE - Formspree form ID - index.html still says YOUR_FORM_ID, so the contact form does nothing
 Verify UCAS three-question format against UCAS site before publishing (ucas-personal-statement.html)
 
 
@@ -65,9 +68,20 @@ Decide on Oxford comma - guidelines contradict themselves (avoid-list vs do-list
 
 === NOTES ===
 
-FAQ auto-close (item 3 above) was added this session in site.js. One-line revert,
-  just say the word.
+Accordions (FAQs and services) no longer auto-close - any number can be open at
+  once, and the indent is hover-only rather than sticking while open. The auto-close
+  handler is gone from site.js entirely; the hover rules are in styles.css.
 When adding any new page it needs: unique title/description/canonical, BreadcrumbList
   + Service + FAQPage JSON-LD (FAQ schema must match visible questions exactly),
   a card in #who-i-help, a footer link, a sitemap.xml entry, an llms.txt entry.
 Styles and scripts are shared - styles.css and site.js. Don't inline them again.
+Illustrations are one shared SVG sprite, injected by site.js and referenced as
+  <svg class="ill ill-mark" viewBox="0 0 24 24"><use href="#wr-quill"></use></svg>.
+  Colour and line weight come from CSS (.ill and the size classes), never from
+  the symbol, so the same drawing works at 17px and at 104px. A new niche page
+  wants: a .niche-hero-art after the hero container, a .section-mark above each
+  .section-title and above the .cta-band h2, a mark inside the .pain-list h2,
+  the .callout and the .related h2, and a .footer-mark above the copyright line.
+  New drawings go in the sprite in site.js, not inline.
+  Keep every symbol's viewBox origin at 0 0. <use> defaults to x="0" y="0", so a
+  symbol starting anywhere else renders offset by that amount and gets clipped.
