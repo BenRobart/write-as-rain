@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Editing Prices &amp; Word Count Calculator | Write as Rain</title>
-  <meta name="description" content="Every price in public, with the sums shown. Proofreading from £250, copyediting from £350, developmental editing from £400. Put your word count in the calculator and get all three numbers, then a flat quote that doesn't move.">
+  <meta name="description" content="Every price in public, with the sums shown. Proofreading £250, copyediting £350, developmental editing £400. Put your word count in and get all three numbers.">
   <link rel="canonical" href="https://REPLACE-DOMAIN/pricing.html">
 
   <meta property="og:site_name" content="Write as Rain">
@@ -423,9 +423,52 @@
     <p>Send the file, or just tell me what it is and how long. You'll get a fixed price and a delivery date back, plus a free sample edit on the first 1,000 words so you can see what you'd be buying before you buy any of it.</p>
     <div class="contact-buttons">
       <a href="mailto:robartben@gmail.com?subject=Price%20for%20my%20project" class="btn primary">Ask for a price</a>
-      <a href="index.html#contact" class="btn">Use the contact form</a>
     </div>
     <p class="small">Useful in your first message: what it is, the word count, which service you think you want, and your deadline if you have one.</p>
+
+    <div class="contact-divider">Or send a message</div>
+
+    <form class="contact-form" action="https://formspree.io/f/xwvgjkpb" method="POST">
+      <input type="hidden" name="_subject" value="Website enquiry &ndash; Pricing">
+      <input type="hidden" name="_next" value="https://REPLACE-DOMAIN/thanks.html">
+      <div class="form-gotcha" aria-hidden="true">
+        <label for="cf-company">Company</label>
+        <input type="text" id="cf-company" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="form-field">
+        <label for="cf-service">How can I help?</label>
+        <select id="cf-service" name="service" required>
+          <option value="" disabled selected>Please choose an option</option>
+          <option value="Manuscript editing">Manuscript editing</option>
+          <option value="Blurb or book description">Blurb or Amazon description</option>
+          <option value="Formatting">Ebook or print formatting</option>
+          <option value="Academic">Academic editing or dissertation coaching</option>
+          <option value="Applications">Personal statement, CV, or LinkedIn</option>
+          <option value="Business writing">Grant, bid, or ghostwriting</option>
+          <option value="Speech">A speech</option>
+          <option value="Something else">Something else</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-field">
+        <label for="cf-email">Email address</label>
+        <input type="email" id="cf-email" name="_replyto" required autocomplete="email">
+      </div>
+      <div class="form-field">
+        <label for="cf-phone">Phone number <span class="label-optional">optional</span></label>
+        <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required placeholder="What are you working on? Include your word count and deadline if you have them."></textarea>
+      </div>
+      <button type="submit" class="btn primary">Send message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Want to send over a file? Email it to me directly, or drop a Google Drive or WeTransfer link into your message. I usually reply within one working day.</p>
+    </form>
   </div>
 </section>
 

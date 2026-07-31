@@ -640,6 +640,36 @@ section { padding: 96px 0; }
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
+/* Spam trap. Positioned off-screen rather than display:none, because the
+   simpler bots skip anything hidden outright and fill in everything else.
+   tabindex="-1" keeps it off the keyboard path, so the aria-hidden on its
+   wrapper isn't hiding anything a person could reach. */
+.form-gotcha {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.label-optional {
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.8;
+}
+
+/* Empty until site.js has something to report, so it costs no space on a page
+   nobody has submitted yet. */
+.form-status { margin-top: 16px; font-size: 14.5px; line-height: 1.55; text-align: center; }
+.form-status:empty { display: none; }
+.form-status.is-ok,
+.form-status.is-error { padding: 13px 18px; border-radius: 2px; border: 1px solid var(--rule); }
+.form-status.is-ok { color: var(--ink); background: var(--accent-soft); border-color: var(--accent); }
+.form-status.is-error { color: var(--ink-soft); }
+
+.contact-form.is-sending button[type="submit"] { opacity: 0.55; pointer-events: none; }
+
 .form-note { font-size: 13px; color: var(--ink-faint); margin-top: 14px; text-align: center; }
 
 /* === FOOTER === */

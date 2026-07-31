@@ -448,6 +448,54 @@
     update();
   })();
 
+  // The contact form posts in place rather than handing the visitor over to
+  // Formspree's own thank-you page. Every form also carries a _next field, so
+  // with scripting off the plain POST still happens and lands on thanks.html —
+  // this only takes over when there's something to take over with.
+  (function () {
+    var forms = document.querySelectorAll('.contact-form');
+    if (!forms.length || !window.fetch || !window.FormData) return;
+
+    var THANKS = 'Thank you for your enquiry. I will get back to you within one business day.';
+
+    Array.prototype.forEach.call(forms, function (form) {
+      var status = form.querySelector('.form-status');
+      if (!status) return;
+
+      form.addEventListener('submit', function (e) {
+        // Let the browser show its own validation messages before we intervene.
+        if (form.checkValidity && !form.checkValidity()) return;
+        e.preventDefault();
+
+        status.className = 'form-status';
+        status.textContent = '';
+        form.classList.add('is-sending');
+
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        }).then(function (res) {
+          if (!res.ok) throw new Error(res.status);
+          form.classList.remove('is-sending');
+          status.className = 'form-status is-ok';
+          status.textContent = THANKS;
+          // Take the fields away with it, so the same message can't go twice.
+          var spent = form.querySelectorAll('.form-field, button[type="submit"], .form-note');
+          Array.prototype.forEach.call(spent, function (el) {
+            if (el.parentNode) el.parentNode.removeChild(el);
+          });
+        }).catch(function () {
+          form.classList.remove('is-sending');
+          status.className = 'form-status is-error';
+          status.innerHTML = 'Something went wrong sending that – the fault is mine, not yours. ' +
+            'Please email me at <a href="mailto:robartben@gmail.com">robartben@gmail.com</a> ' +
+            'and I\'ll pick it up from there.';
+        });
+      });
+    });
+  })();
+
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // --- Reveal on scroll (also drives .stagger and .section-title rules) ---

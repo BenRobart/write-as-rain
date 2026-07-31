@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Message sent | Write as Rain</title>
+  <meta name="description" content="Your enquiry has been sent to Write as Rain.">
+
+  <!-- A landing page for a form post, not something anyone should reach from a
+       search result. Deliberately absent from sitemap.xml for the same reason.
+       Most visitors never see it: site.js posts the form in place and shows the
+       same message without a page change. This is the no-JavaScript path. -->
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="brand"><span class="accent">Write</span> as Rain</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html#about">about</a></li>
+      <li><a href="index.html#services">services</a></li>
+      <li><a href="pricing.html">prices</a></li>
+      <li><a href="index.html#who-i-help">who I help</a></li>
+      <li><a href="index.html#process">how it works</a></li>
+      <li><a href="index.html#faq">faq</a></li>
+      <li><a href="index.html#contact">contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="index.html#contact" class="btn primary">Get in touch</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+<section class="section-alt">
+  <div class="container cta-band">
+    <div class="section-mark"><svg class="ill ill-xl" viewBox="0 0 24 24" aria-hidden="true"><use href="#wr-envelope"></use></svg></div>
+    <h1>Thank you for your enquiry</h1>
+    <p>I will get back to you within one business day.</p>
+    <p class="small">If it's urgent, or if you'd rather just send the file over, email me directly at <a href="mailto:robartben@gmail.com">robartben@gmail.com</a> or call 07921 835288. Attachments are welcome &ndash; so are Google Drive and WeTransfer links.</p>
+    <div class="contact-buttons" style="margin-top: 26px;">
+      <a href="index.html" class="btn primary">Back to the homepage</a>
+      <a href="pricing.html" class="btn">Prices &amp; calculator</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-mark"><svg class="ill ill-md" viewBox="0 0 24 24" aria-hidden="true"><use href="#wr-nib"></use></svg></div>
+    <p>&copy; 2026 Write as Rain &middot; <a href="mailto:robartben@gmail.com">robartben@gmail.com</a> &middot; <a href="index.html">Home</a></p>
+  </div>
+  <button type="button" class="privacy-btn" id="privacyBtn" aria-expanded="false" aria-controls="privacyPopup">Cookies/Privacy Policy</button>
+</footer>
+
+<div class="privacy-popup" id="privacyPopup" role="dialog" aria-modal="false" aria-labelledby="privacyPopupTitle" aria-hidden="true">
+  <div class="privacy-popup-header">
+    <h2 class="privacy-popup-title" id="privacyPopupTitle">Cookies/Privacy Policy</h2>
+    <button type="button" class="privacy-popup-close" id="privacyPopupClose" aria-label="Close privacy policy">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="privacy-popup-body">
+    I don't store any of your data at all unless you choose to contact me, in which case your information will only be used for contact relevant to your enquiry. You will not be subscribed to any newsletters and your details will never be shared with any third parties.<br><br>
+	This website is hosted by GitHub and uses a FormSpree.io embed for the contact form &ndash; please refer to their individual policies on usage of personal data.
+  </div>
+</div>
+
+<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9790;</button>
+
+<script src="site.js"></script>
+
+</body>
+</html>

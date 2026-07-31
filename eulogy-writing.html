@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Help Writing a Eulogy | Short Notice Welcome | Write as Rain</title>
-  <meta name="description" content="One phone call. You talk about them, I write it. Short notice is normal and expected. A eulogy you can actually get through on the day, with pauses marked. From £100, and if a conversation is all you need, that's free.">
+  <meta name="description" content="One phone call. You talk about them, I write it. Short notice is normal. A eulogy you can get through on the day, with pauses marked. From £100, advice free.">
   <link rel="canonical" href="https://REPLACE-DOMAIN/eulogy-writing.html">
 
   <meta property="og:site_name" content="Write as Rain">
@@ -308,6 +308,50 @@
       <a href="tel:+447921835288" class="btn">Call 07921 835288</a>
     </div>
     <p class="small">I'm sorry for your loss. Whatever you decide about this, I hope the day goes gently.</p>
+
+    <div class="contact-divider">Or send a message</div>
+
+    <form class="contact-form" action="https://formspree.io/f/xwvgjkpb" method="POST">
+      <input type="hidden" name="_subject" value="Website enquiry &ndash; Eulogy">
+      <input type="hidden" name="_next" value="https://REPLACE-DOMAIN/thanks.html">
+      <div class="form-gotcha" aria-hidden="true">
+        <label for="cf-company">Company</label>
+        <input type="text" id="cf-company" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="form-field">
+        <label for="cf-service">How can I help?</label>
+        <select id="cf-service" name="service" required>
+          <option value="" disabled>Please choose an option</option>
+          <option value="Manuscript editing">Manuscript editing</option>
+          <option value="Blurb or book description">Blurb or Amazon description</option>
+          <option value="Formatting">Ebook or print formatting</option>
+          <option value="Academic">Academic editing or dissertation coaching</option>
+          <option value="Applications">Personal statement, CV, or LinkedIn</option>
+          <option value="Business writing">Grant, bid, or ghostwriting</option>
+          <option value="Speech" selected>A speech</option>
+          <option value="Something else">Something else</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-field">
+        <label for="cf-email">Email address</label>
+        <input type="email" id="cf-email" name="_replyto" required autocomplete="email">
+      </div>
+      <div class="form-field">
+        <label for="cf-phone">Phone number <span class="label-optional">optional</span></label>
+        <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required placeholder="What are you working on? Include your word count and deadline if you have them."></textarea>
+      </div>
+      <button type="submit" class="btn primary">Send message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Want to send over a file? Email it to me directly, or drop a Google Drive or WeTransfer link into your message. I usually reply within one working day.</p>
+    </form>
   </div>
 </section>
 

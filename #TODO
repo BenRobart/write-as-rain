@@ -8,13 +8,43 @@ DONE - FAQs - should be indented when hovered, but shouldn't stay indented if th
 DONE - Homepage SVG disappears when changing between light/dark
 DONE - Needs more smaller SVGs throughout the site
 + Analytics, GSC, Clarity
++ Fix gap between title and text on "Get in touch"
 
 
 === BEFORE LAUNCH (blocking) ===
 
-Replace REPLACE-DOMAIN - 157 placeholders across 24 files (was 82; the eight new
-  pages, the sitemap and llms.txt account for the rest). Wrong canonical is worse than none.
-  Git Bash: grep -rl 'REPLACE-DOMAIN' . | xargs sed -i 's|REPLACE-DOMAIN|yourdomain.co.uk|g'
+Replace REPLACE-DOMAIN - 169 placeholders across 22 files. (Recounted: it was
+  150 across 22, and the contact form rollout added a _next field to all 19 pages.
+  The old "157 across 24" counted the two TODO files, which don't ship.)
+  Wrong canonical is worse than none.
+  Git Bash - scoped to the file types that actually carry it, so it can't walk
+  into .git or trip over the filename with spaces:
+    grep -rl 'REPLACE-DOMAIN' --include='*.html' --include='*.txt' --include='*.xml' . \
+      | xargs sed -i 's|REPLACE-DOMAIN|yourdomain.co.uk|g'
+    grep -rn 'REPLACE-DOMAIN' --include='*.html' --include='*.txt' --include='*.xml' . || echo "all clear"
+
+DECIDE - the contact email. robartben@gmail.com appears in 20+ mailto links, the
+  ProfessionalService schema on index.html, the form's error fallback in site.js,
+  and llms.txt. Once the domain exists, hello@<domain> is usually free forwarding
+  and reads better on a page quoting GBP 710. If it's going to change, change it in
+  the same pass as REPLACE-DOMAIN rather than sweeping twice.
+
+GITHUB PAGES - three things the repo now has or needs:
+  .nojekyll   DONE. Stops Jekyll processing the repo. Without it the .md files
+              get rendered as pages and anything starting with _ is dropped.
+  404.html    DONE. Uses root-absolute paths (/styles.css) because Pages serves it
+              at whatever depth was typed; relative paths would break. Side effect:
+              this one page looks wrong opened from the file system. Check it served.
+  CNAME       STILL NEEDED. Either set the custom domain in Settings > Pages (which
+              writes the file for you) or commit a CNAME containing just the bare
+              domain, no https and no trailing slash. Then tick "Enforce HTTPS"
+              once the certificate has been issued - it can take a few minutes.
+              Add the DNS records at the registrar first, or the check fails.
+
+TEST THE FORM once live - send one real message and confirm it arrives. That is
+  the only way to find out it works. Check the spam folder: Formspree sends from
+  its own domain, so the first one often lands there.
+
 DONE - Formspree form ID - index.html still says YOUR_FORM_ID, so the contact form does nothing
 Verify UCAS three-question format against UCAS site before publishing - now stated on
   two pages: ucas-personal-statement.html and medicine-personal-statement.html (which also
@@ -86,9 +116,20 @@ Decide on Oxford comma - guidelines contradict themselves (avoid-list vs do-list
 Accordions (FAQs and services) no longer auto-close - any number can be open at
   once, and the indent is hover-only rather than sticking while open. The auto-close
   handler is gone from site.js entirely; the hover rules are in styles.css.
-When adding any new page it needs: unique title/description/canonical, BreadcrumbList
+Contact form is now on all 19 pages, not just the homepage, in each page's #contact
+  band under an "Or send a message" divider. The markup is identical everywhere
+  except two things: the hidden _subject (so the enquiry email says which page it
+  came from) and which <option> carries `selected` (so "How can I help?" arrives
+  pre-answered). site.js posts it with fetch and swaps the fields for the thank-you
+  line in place; the hidden _next is the no-JavaScript path and lands on thanks.html,
+  which says the same thing. thanks.html is noindex and deliberately not in the
+  sitemap. Description meta on all 19 pages trimmed to under 160 characters, which
+  is roughly where Google truncates.
+When adding any new page it needs: unique title/description/canonical (keep the
+  description under 160 characters), BreadcrumbList
   + Service + FAQPage JSON-LD (FAQ schema must match visible questions exactly),
-  a card in #who-i-help, a footer link, a sitemap.xml entry, an llms.txt entry.
+  a card in #who-i-help, a footer link, a sitemap.xml entry, an llms.txt entry,
+  and a copy of the contact form with its own _subject and selected option.
   Also the nav, which now carries "prices" between services and who I help on all 19
   pages, and links in from wherever the page is relevant. Nothing links to an orphan.
 Styles and scripts are shared - styles.css and site.js. Don't inline them again.

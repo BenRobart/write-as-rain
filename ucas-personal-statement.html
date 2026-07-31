@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>UCAS Personal Statement Help | Edited, Never Written For You | From £100</title>
-  <meta name="description" content="Help with the UCAS personal statement questions – structural feedback and line editing on your own draft, never a statement written for you. Admissions tutors can tell, and so can UCAS. From £100, free assessment first.">
+  <meta name="description" content="Help with the UCAS personal statement questions: structural feedback and line editing on your own draft, never one written for you. From £100, first look free.">
   <link rel="canonical" href="https://REPLACE-DOMAIN/ucas-personal-statement.html">
 
   <meta property="og:site_name" content="Write as Rain">
@@ -328,9 +328,52 @@
     <p>I'll read it and tell you honestly what it needs &ndash; free, before you pay anything. If you haven't written a word yet, say so instead and I'll send you the questions that get a first draft out of you.</p>
     <div class="contact-buttons">
       <a href="mailto:robartben@gmail.com?subject=Personal%20statement%20-%20free%20assessment" class="btn primary">Email your draft</a>
-      <a href="index.html#contact" class="btn">Use the contact form</a>
     </div>
     <p class="small">Useful to include: the course and universities you're applying to, your deadline, and whether you're likely to be interviewed. Parents are welcome to get in touch on a student's behalf, though I'll want to work with the applicant directly &ndash; it's their statement.</p>
+
+    <div class="contact-divider">Or send a message</div>
+
+    <form class="contact-form" action="https://formspree.io/f/xwvgjkpb" method="POST">
+      <input type="hidden" name="_subject" value="Website enquiry &ndash; UCAS personal statement">
+      <input type="hidden" name="_next" value="https://REPLACE-DOMAIN/thanks.html">
+      <div class="form-gotcha" aria-hidden="true">
+        <label for="cf-company">Company</label>
+        <input type="text" id="cf-company" name="_gotcha" tabindex="-1" autocomplete="off">
+      </div>
+      <div class="form-field">
+        <label for="cf-service">How can I help?</label>
+        <select id="cf-service" name="service" required>
+          <option value="" disabled>Please choose an option</option>
+          <option value="Manuscript editing">Manuscript editing</option>
+          <option value="Blurb or book description">Blurb or Amazon description</option>
+          <option value="Formatting">Ebook or print formatting</option>
+          <option value="Academic">Academic editing or dissertation coaching</option>
+          <option value="Applications" selected>Personal statement, CV, or LinkedIn</option>
+          <option value="Business writing">Grant, bid, or ghostwriting</option>
+          <option value="Speech">A speech</option>
+          <option value="Something else">Something else</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required autocomplete="name">
+      </div>
+      <div class="form-field">
+        <label for="cf-email">Email address</label>
+        <input type="email" id="cf-email" name="_replyto" required autocomplete="email">
+      </div>
+      <div class="form-field">
+        <label for="cf-phone">Phone number <span class="label-optional">optional</span></label>
+        <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+      </div>
+      <div class="form-field">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" required placeholder="What are you working on? Include your word count and deadline if you have them."></textarea>
+      </div>
+      <button type="submit" class="btn primary">Send message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Want to send over a file? Email it to me directly, or drop a Google Drive or WeTransfer link into your message. I usually reply within one working day.</p>
+    </form>
   </div>
 </section>
 
