@@ -1,53 +1,68 @@
 DONE - Best man page - liked the story at the top of the page
 DONE - Breadcrumbs are ugly
 DONE - FAQ shouldn't close others when a new answer is clicked
-Favicon
++ Favicon
 DONE - Mention of working at TOF
 DONE - Logo at top left - Write doesn't line up properly
 DONE - FAQs - should be indented when hovered, but shouldn't stay indented if they're clicked unless still hovered
 DONE - Homepage SVG disappears when changing between light/dark
 DONE - Needs more smaller SVGs throughout the site
++ Analytics, GSC, Clarity
 
 
 === BEFORE LAUNCH (blocking) ===
 
-Replace REPLACE-DOMAIN - 82 placeholders across 14 files. Wrong canonical is worse than none.
+Replace REPLACE-DOMAIN - 157 placeholders across 24 files (was 82; the eight new
+  pages, the sitemap and llms.txt account for the rest). Wrong canonical is worse than none.
   Git Bash: grep -rl 'REPLACE-DOMAIN' . | xargs sed -i 's|REPLACE-DOMAIN|yourdomain.co.uk|g'
 DONE - Formspree form ID - index.html still says YOUR_FORM_ID, so the contact form does nothing
-Verify UCAS three-question format against UCAS site before publishing (ucas-personal-statement.html)
+Verify UCAS three-question format against UCAS site before publishing - now stated on
+  two pages: ucas-personal-statement.html and medicine-personal-statement.html (which also
+  claims the earlier October deadline for medicine, dentistry, vet and Oxbridge)
 
 
-=== NEW PAGES - ranked by effort vs reward ===
+=== NEW PAGES - all eight built, need a read-through ===
 
-1. Proofreading vs copyediting vs developmental - comparison page
-   Highest-volume query in the sector. Informational so it ranks without fighting
-   commercial intent. Currently buried in a homepage FAQ accordion, which is the
-   worst possible place for it.
+DONE - 1. proofreading-vs-copyediting.html - comparison page
+   Same paragraph shown proofread, copyedited and developmentally edited, plus the
+   industry's inconsistent vocabulary (line edit, structural, assessment, proof-edit).
 
-2. Pricing page + word count calculator
-   "how much does it cost to edit a book" is high volume AND high intent. Open
-   pricing is a competitive weapon and it's currently hidden. Small JS calculator:
-   enter word count, get all three prices. Earns links, keeps people on page.
+DONE - 2. pricing.html - every price + word count calculator
+   Calculator JS lives in site.js (guarded on #calc-words, so it's inert elsewhere);
+   styles in styles.css. Markup ships with the 80,000-word sums filled in, so it still
+   works with scripting off. Invented policies to check: no rush surcharge, no series
+   discount, "splitting a long invoice is fine to ask about". Change if wrong.
 
-3. Book blurb & Amazon description writing
-   New revenue line, low delivery effort, indie authors search it constantly.
-   Natural upsell after a copyedit.
+DONE - 3. book-blurb-writing.html
+   NEW PRICES, made up, need your sign-off: £120 package, £90 added to an edit,
+   £90 per further book in a series. Package = hook line, back cover blurb, Amazon
+   description, author bio, two revision rounds.
 
-4. Ebook & print formatting / KDP
-   Already offered, distinct search, commercial intent. Currently one accordion item.
+DONE - 4. ebook-formatting-kdp.html
+   Uses the existing £75/£150. Fixed-layout quoted separately. Says plainly that
+   regular publishers should buy Vellum or Atticus instead.
 
-5. Memoir & life story
-   Underserved. Older, more affluent, emotionally motivated buyers. Pairs with
-   developmental editing.
+DONE - 5. memoir-life-story.html
+   Editing at standard manuscript prices; interview-based life story work is the one
+   thing quoted individually, and the pricing page owns up to that rather than hiding it.
 
-6. Cover letters
-   Obvious companion to the CV page. The two cross-link naturally.
+DONE - 6. cover-letter-writing.html
+   NEW PRICES, made up: £45 alone, £110 with a CV, £150 with CV and LinkedIn.
+   Includes NHS/public sector supporting statements, which is the higher-intent half.
 
-7. Crime & thriller editing
-   Completes the genre set alongside romance and SFF.
+DONE - 7. crime-thriller-editor.html
+   Signature deliverable is a clue timeline, matching romance's series bible and SFF's
+   glossary. Procedural section is deliberately "I flag, I don't certify".
 
-8. Medicine & dentistry personal statements
-   Very high intent. UK applicants search this separately from generic UCAS help.
+DONE - 8. medicine-personal-statement.html
+   Cross-links the UCAS page both ways. Carries the same "confirm with UCAS" note.
+
+Also added, since they were needed to tie the new pages in:
+  - "prices" in the nav on every page (19 files)
+  - 8 new cards in #who-i-help (18 total), 8 new footer links
+  - blurb + cover letter accordions in #services, with matching schema offers
+  - 5 new sprite symbols: fingerprint, stethoscope, calculator, photo, megaphone
+  - .stagger delays extended to 18 children, since the niche grid outgrew 10
 
 
 === NON-PAGE, HIGHER IMPACT THAN PAGES 7-8 ===
@@ -74,6 +89,8 @@ Accordions (FAQs and services) no longer auto-close - any number can be open at
 When adding any new page it needs: unique title/description/canonical, BreadcrumbList
   + Service + FAQPage JSON-LD (FAQ schema must match visible questions exactly),
   a card in #who-i-help, a footer link, a sitemap.xml entry, an llms.txt entry.
+  Also the nav, which now carries "prices" between services and who I help on all 19
+  pages, and links in from wherever the page is relevant. Nothing links to an orphan.
 Styles and scripts are shared - styles.css and site.js. Don't inline them again.
 Illustrations are one shared SVG sprite, injected by site.js and referenced as
   <svg class="ill ill-mark" viewBox="0 0 24 24"><use href="#wr-quill"></use></svg>.

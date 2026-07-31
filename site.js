@@ -237,6 +237,41 @@
         '<circle cx="12" cy="12" r="9"/>' +
         '<path d="M5.6 5.6 18.4 18.4"/>' +
       '</symbol>',
+      // Fingerprint, for crime
+      '<symbol id="wr-fingerprint" viewBox="0 0 24 24">' +
+        '<path d="M3.6 11.8a8.4 8.4 0 0 1 16.8 0v1.6"/>' +
+        '<path d="M6.8 12a5.2 5.2 0 0 1 10.4 0c0 2.6-.4 5-1.2 7.2"/>' +
+        '<path d="M9.9 12a2.1 2.1 0 0 1 4.2 0c0 3.2-.5 6.2-1.5 8.7"/>' +
+        '<path d="M5.7 17.9c.7-1.9 1.1-3.9 1.1-5.9"/>' +
+        '<path d="M20.3 15.8c-.2 1.5-.5 2.9-1 4.2"/>' +
+      '</symbol>',
+      // Stethoscope
+      '<symbol id="wr-stethoscope" viewBox="0 0 24 24">' +
+        '<path d="M4.4 2.8h-.6A1.8 1.8 0 0 0 2 4.6v4.2a5.6 5.6 0 0 0 11.2 0V4.6a1.8 1.8 0 0 0-1.8-1.8h-.6"/>' +
+        '<path d="M7.6 14.4v1.2a5 5 0 0 0 10 0v-2.3"/>' +
+        '<circle cx="17.6" cy="11" r="2.3"/>' +
+      '</symbol>',
+      // Calculator, for the word count sums
+      '<symbol id="wr-calculator" viewBox="0 0 24 24">' +
+        '<rect x="4.4" y="2.6" width="15.2" height="18.8" rx="2"/>' +
+        '<rect x="7.4" y="5.6" width="9.2" height="3.4" rx="1"/>' +
+        '<path d="M7.8 12.6h1.6M11.2 12.6h1.6M14.6 12.6h1.6"/>' +
+        '<path d="M7.8 15.8h1.6M11.2 15.8h1.6M14.6 15.8h1.6"/>' +
+        '<path d="M7.8 19h1.6M11.2 19h1.6M14.6 19h1.6"/>' +
+      '</symbol>',
+      // Framed photograph, for a life story
+      '<symbol id="wr-photo" viewBox="0 0 24 24">' +
+        '<rect x="3" y="4.4" width="18" height="15.2" rx="2"/>' +
+        '<circle cx="8.4" cy="9.6" r="1.6"/>' +
+        '<path d="m3.4 17.6 4.8-4.7a1.8 1.8 0 0 1 2.5 0l3.9 3.9"/>' +
+        '<path d="m14.1 14.6 1.8-1.7a1.8 1.8 0 0 1 2.5 0l2.2 2.1"/>' +
+      '</symbol>',
+      // Megaphone, for the words that sell the book
+      '<symbol id="wr-megaphone" viewBox="0 0 24 24">' +
+        '<path d="M4.6 9.4h3.2L18 4.2v15.6L7.8 14.6H4.6a1.8 1.8 0 0 1-1.8-1.8v-1.6a1.8 1.8 0 0 1 1.8-1.8Z"/>' +
+        '<path d="M7.8 9.4v5.2"/>' +
+        '<path d="M20.4 9.2a3.4 3.4 0 0 1 0 5.6"/>' +
+      '</symbol>',
       // The name, drawn: rain falling onto an open book. Homepage hero only.
       // Keep the viewBox origin at 0 0. <use> defaults to x="0" y="0", so a
       // symbol whose viewBox starts anywhere else gets placed that far off and
@@ -330,6 +365,87 @@
       if (popup.contains(e.target) || btn.contains(e.target)) return;
       closePopup(false);
     });
+  })();
+
+  // --- Word count calculator (pricing.html only) ---
+  // The three manuscript services share one shape: a base price covering the
+  // first 60,000 words, then a published rate per additional 1,000. The markup
+  // ships with the sums for the default word count already filled in, so the
+  // panel still says something useful with scripting off.
+  (function () {
+    var input = document.getElementById('calc-words');
+    if (!input) return;
+
+    var FREE_TO = 60000;
+    var services = {
+      proof: { base: 250, rate: 4 },
+      copy:  { base: 350, rate: 6 },
+      dev:   { base: 400, rate: 7 }
+    };
+    var note = document.getElementById('calc-note');
+
+    function money(n) { return '£' + n.toLocaleString('en-GB'); }
+
+    function update() {
+      var words = parseInt(String(input.value).replace(/[^0-9]/g, ''), 10);
+      var valid = isFinite(words) && words > 0;
+      // Part-thousands are charged as a whole thousand, so the quote can never
+      // come out lower than the number shown here.
+      var extra = valid ? Math.max(0, Math.ceil((words - FREE_TO) / 1000)) : 0;
+
+      Object.keys(services).forEach(function (key) {
+        var s = services[key];
+        var priceEl = document.querySelector('[data-calc-price="' + key + '"]');
+        var sumEl = document.querySelector('[data-calc-sum="' + key + '"]');
+        if (priceEl) priceEl.textContent = valid ? money(s.base + extra * s.rate) : '—';
+        if (!sumEl) return;
+        if (!valid) {
+          sumEl.textContent = 'Waiting on a word count';
+        } else if (extra === 0) {
+          sumEl.textContent = money(s.base) + ' flat, with ' +
+            (FREE_TO - words).toLocaleString('en-GB') + ' words to spare';
+        } else {
+          sumEl.textContent = money(s.base) + ' + (' + extra + ' × ' + money(s.rate) + ')';
+        }
+      });
+
+      if (!note) return;
+      if (!valid) {
+        note.textContent = 'Put a word count in and the three prices work themselves out.';
+      } else if (extra === 0) {
+        note.textContent = 'Under 60,000 words, so all three sit at the base price. Nothing is added on.';
+      } else {
+        note.textContent = words.toLocaleString('en-GB') + ' words is 60,000 plus ' + extra +
+          ' more thousand, and only that second part is charged per 1,000. Part-thousands round up, ' +
+          'so the quote you get will match this number or come in under it.';
+      }
+    }
+
+    // Stepper buttons, standing in for the browser's spin buttons: those sit on
+    // top of a right-aligned number and clip the last digit. Each click moves to
+    // the next round thousand rather than adding to an odd count, so 82,300 goes
+    // to 83,000 rather than 83,300. The input's own arrow keys still work.
+    var steppers = document.querySelectorAll('[data-calc-step]');
+    Array.prototype.forEach.call(steppers, function (btn) {
+      btn.addEventListener('click', function () {
+        var step = parseInt(btn.getAttribute('data-calc-step'), 10);
+        var size = Math.abs(step);
+        var current = parseInt(String(input.value).replace(/[^0-9]/g, ''), 10);
+        if (!isFinite(current)) current = 0;
+        var next = step > 0
+          ? (Math.floor(current / size) + 1) * size
+          : Math.ceil(current / size - 1) * size;
+        var min = parseInt(input.min, 10);
+        var max = parseInt(input.max, 10);
+        if (isFinite(min)) next = Math.max(min, next);
+        if (isFinite(max)) next = Math.min(max, next);
+        input.value = next;
+        update();
+      });
+    });
+
+    input.addEventListener('input', update);
+    update();
   })();
 
   var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;

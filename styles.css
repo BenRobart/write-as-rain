@@ -400,6 +400,16 @@ section { padding: 96px 0; }
 .stagger.visible > *:nth-child(8)  { transition-delay: 0.42s; }
 .stagger.visible > *:nth-child(9)  { transition-delay: 0.48s; }
 .stagger.visible > *:nth-child(10) { transition-delay: 0.54s; }
+/* The niche grid runs past ten cards, and an item with no delay arrives ahead of
+   the ones above it, which reads as a glitch rather than a stagger. */
+.stagger.visible > *:nth-child(11) { transition-delay: 0.60s; }
+.stagger.visible > *:nth-child(12) { transition-delay: 0.66s; }
+.stagger.visible > *:nth-child(13) { transition-delay: 0.72s; }
+.stagger.visible > *:nth-child(14) { transition-delay: 0.78s; }
+.stagger.visible > *:nth-child(15) { transition-delay: 0.84s; }
+.stagger.visible > *:nth-child(16) { transition-delay: 0.90s; }
+.stagger.visible > *:nth-child(17) { transition-delay: 0.96s; }
+.stagger.visible > *:nth-child(18) { transition-delay: 1.02s; }
 
 @media (prefers-reduced-motion: reduce) {
   .hero h1, .hero .tagline, .hero-cta { animation: none; opacity: 1; }
@@ -1036,6 +1046,143 @@ footer {
 @media (max-width: 560px) {
   .price-row { flex-direction: column; gap: 6px; padding: 16px 18px; }
   .price-row .price-how-much { white-space: normal; }
+}
+
+/* Word count calculator — pricing page. Shares the price panel's frame so the
+   two blocks read as one idea rather than two widgets. */
+.calc {
+  max-width: 740px;
+  margin: 32px auto 0;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.calc-field {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+}
+
+.calc-field label {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+
+.calc-input { display: flex; align-items: center; gap: 10px; margin-left: auto; }
+
+/* Input and stepper share one frame, so the pair reads as a single field rather
+   than a box with buttons stuck to it. */
+.calc-control {
+  display: flex;
+  align-items: stretch;
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.calc-control:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.calc-control input {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 19px;
+  width: 7.5ch;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  padding: 9px 12px;
+  text-align: right;
+  font-variant-numeric: lining-nums tabular-nums;
+  font-feature-settings: 'lnum' 1, 'tnum' 1;
+}
+.calc-control input:focus { outline: none; }
+
+/* The browser's own spin buttons sit on top of a right-aligned number and clip
+   the last digit, so they go and the stepper below replaces them. */
+.calc-control input::-webkit-outer-spin-button,
+.calc-control input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.calc-control input { -moz-appearance: textfield; appearance: textfield; }
+
+.calc-stepper {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--rule);
+}
+/* Without scripting the buttons would do nothing, so they aren't shown at all. */
+html:not(.js) .calc-stepper { display: none; }
+
+.calc-step {
+  flex: 1 1 50%;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--ink-faint);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.calc-step + .calc-step { border-top: 1px solid var(--rule); }
+.calc-step:hover {
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--accent);
+}
+.calc-step:active { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+.calc-step svg { width: 13px; height: 13px; }
+
+.calc-input .calc-unit { font-size: 14px; color: var(--ink-faint); }
+
+.calc-row {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--rule);
+  transition: background 0.25s ease;
+}
+.calc-row:hover { background: color-mix(in srgb, var(--accent) 4%, transparent); }
+
+.calc-what { flex: 1 1 auto; font-size: 15.5px; color: var(--ink); }
+.calc-what small {
+  display: block;
+  font-size: 13.5px;
+  color: var(--ink-faint);
+  margin-top: 3px;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.calc-price {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.calc-note {
+  padding: 15px 22px;
+  font-size: 13.5px;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .calc-field { padding: 18px; }
+  .calc-input { margin-left: 0; }
+  .calc-row { flex-direction: column; gap: 6px; padding: 16px 18px; }
 }
 
 /* Simple data table (word counts, timelines) */

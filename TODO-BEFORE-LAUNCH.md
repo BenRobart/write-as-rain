@@ -1,8 +1,8 @@
 # Before this site goes live
 
-Three things must be replaced. Nothing else is blocking.
+Two things left. Nothing else is blocking.
 
-## 1. The domain — 82 placeholders across 14 files
+## 1. The domain — 157 placeholders across 24 files
 
 Every canonical URL, Open Graph URL, sitemap entry and schema `@id` currently says
 `REPLACE-DOMAIN`. **A wrong canonical tag is worse than none at all**, so this has to be
@@ -21,11 +21,10 @@ in the files). Then check nothing was missed:
 grep -rn 'REPLACE-DOMAIN' . || echo "all clear"
 ```
 
-## 2. The contact form — `index.html`
+## 2. ~~The contact form~~ — done
 
-`action="https://formspree.io/f/YOUR_FORM_ID"` is still a placeholder, so **the form
-currently does nothing**. Create a new Formspree form for this site (separate from the dev
-site's, so the two enquiry streams stay apart) and paste the ID in.
+`index.html` now posts to a real Formspree endpoint. Worth sending one test message
+after the domain change, since that's the only way to find out it works.
 
 ## 3. Verify the UCAS three-question format
 
@@ -34,6 +33,24 @@ personal statement with three questions, 4,000 characters total, minimum 350 per
 Confirm the exact wording and limits on the UCAS site for the current cycle before
 publishing — the page already tells readers to do the same, but the page itself should
 be right. This is the one factual claim on the site that has a shelf life.
+
+`medicine-personal-statement.html` repeats the same three questions and adds the earlier
+October deadline for medicine, dentistry, veterinary science and Oxbridge. Same check,
+same page on the UCAS site.
+
+## Prices invented for the two new services
+
+`book-blurb-writing.html` (£120, £90 with an edit, £90 per further book in a series) and
+`cover-letter-writing.html` (£45, £110 with a CV, £150 with CV and LinkedIn) are new
+revenue lines with no existing price to inherit, so those numbers were chosen to ladder
+sensibly against the CV pricing. They appear on the page, in `pricing.html`, in the
+homepage `#services` accordions, in the homepage `makesOffer` schema, and in `llms.txt`.
+Change them in all five places or none.
+
+`pricing.html` also commits to three policies that weren't written down anywhere before:
+no rush surcharge, no series discount, and splitting a long invoice being a normal
+request. All three are consistent with how the rest of the site talks, but they are
+policies, so they're yours to confirm or cut.
 
 ---
 
@@ -60,5 +77,13 @@ Copy any existing niche page as a template. Every one of them needs:
    visible questions exactly — Google treats a mismatch as a violation).
 3. A card added to the `#who-i-help` grid in `index.html`, a link in the footer list,
    an entry in `sitemap.xml`, and an entry in `llms.txt`.
+4. The shared nav, which now carries a `prices` link between `services` and `who I help`
+   on all 19 pages. Copying an existing page brings it along; writing one from scratch
+   doesn't.
+5. Links *into* the new page from wherever it's relevant. A page nothing links to is a
+   page Google treats as an orphan, and readers never find it either.
 
 Styles and scripts are shared via `styles.css` and `site.js` — don't inline them again.
+New illustrations go in the sprite at the top of `site.js`, with the viewBox origin at
+`0 0`; the pricing calculator is also in `site.js` and does nothing on pages without a
+`#calc-words` input.
