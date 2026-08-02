@@ -29,9 +29,31 @@ DONE - Dark mode is a bit chocolatey?
   Desaturated the dark tokens: backgrounds went from hue 21 / 47% sat to hue 28 /
   15%, so the ground reads as bark rather than cocoa. Text and rules dropped the
   same way. Accent pink and the light theme are untouched.
-  Do we have a ghostwriting page?
-  Audit LLMs.txt etc
-  Is new page in line with AI Guidelines
+DONE - Do we have a ghostwriting page? We didn't. We do now: executive-ghostwriting.html.
+  It was the only £500-a-month service with nowhere to send anyone - one accordion on
+  the homepage, one line in llms.txt, a price row, and that was it. The page covers how
+  the month runs, how the voice gets captured (the recording, your own old emails, and a
+  "never list"), before/after openings, whether ghostwriting is dishonest (answered head
+  on rather than dodged), what nobody can promise, and who it doesn't suit.
+  INVENTED, needs your sign-off: £500 buys the conversation plus eight posts, or four
+  posts and a newsletter, two rounds of edits each. Free first conversation and post.
+  No minimum term.
+DONE - Audit llms.txt. All 21 content pages are listed, and all 15 prices were checked
+  line by line against the price rows in pricing.html - no drift anywhere. Updated for
+  both new pages and for the cover letter and document prices.
+DONE - Is new page in line with AI Guidelines. Both new pages scanned: zero banned words,
+  zero em dashes (spaced en dashes throughout), one and two semicolons in the whole of
+  each page, no "not X but Y", British spelling, Oxford commas. Sentence length averages
+  ~15 words but runs from 1 to 54, which is the burstiness the guidelines ask for.
+  NOTE: the DO half of that file is written for Vertex Agility - cloud and AI vocabulary,
+  Title Case headers, cited third-party sources. Ignored on purpose. Following it would
+  wreck the voice the other pages share.
+DONE - Change pricing. Documents from £30. Cover letter £45 -> £30, and the bundles moved
+  with it: CV and letter £110 -> £95, and CV, LinkedIn, and letter £150 -> £140, both
+  keeping the same £10 saving they had before. Each change went into all five places
+  (the page, pricing.html, the homepage accordion, the makesOffer schema, llms.txt).
+  ONE TO LOOK AT: a 1,000-2,000 word NHS supporting statement is now in the same £30
+  tier as a 400-word cover letter. Reasoning in TODO-BEFORE-LAUNCH.md.
 
 ANALYTICS - both tags are now INSTALLED on all 21 pages, immediately before </head>.
   GA4      G-4W3Q03PS05
@@ -90,7 +112,7 @@ DONE - UCAS three-question format VERIFIED against ucas.com (Aug 2026). Three qu
   RE-CHECK EACH CYCLE. This is still the one claim on the site with a shelf life.
 
 
-=== NEW PAGES - all eight built, need a read-through ===
+=== NEW PAGES - all ten built, need a read-through ===
 
 DONE - 1. proofreading-vs-copyediting.html - comparison page
    Same paragraph shown proofread, copyedited and developmentally edited, plus the
@@ -126,9 +148,40 @@ DONE - 7. crime-thriller-editor.html
 DONE - 8. medicine-personal-statement.html
    Cross-links the UCAS page both ways. Carries the same "confirm with UCAS" note.
 
+DONE - 9. document-writing-service.html
+   Handwritten pages and rough drafts turned into finished documents. The gap was that
+   every other writing page is defined by where the document is going; nothing was
+   defined by the state it arrives in. NEW PRICE, made up: from £30 for a letter or
+   single page, longer quoted flat, tidy-ups less. Also commits to same or next day on
+   letters and two to three days on longer documents - a delivery promise, so worth
+   confirming you want to be held to it.
+
+DONE - 10. executive-ghostwriting.html
+   See the note at the top. Package contents are invented and need your sign-off.
+
+DONE - 11. book-ghostwriting.html
+   The one you actually meant. Covers all four books people arrive with: business and
+   expertise books, memoirs for publication, private family books, and novels. The
+   memoir page keeps the editing and the family side and the two cross-link both ways.
+   NEW PRICES, made up, and by far the biggest on the site: £450 plan and sample chapter,
+   £3,500 up to 30,000 words, £7,000 up to 60,000, then £120 per 1,000. All three sit at
+   about £117 per 1,000 words, so they move together or not at all. Reasoning and a
+   sanity check against UK market rates are in TODO-BEFORE-LAUNCH.md.
+   Also commits to terms: staged quarters, you keep everything if you stop, no royalties
+   or rights taken, sole credit by default.
+   FIXED WHILE THERE: memoir-life-story.html and pricing.html both said interview-based
+   life story work was "quoted, flat", which contradicted the published bands. Both now
+   say from £3,500 and link across.
+   ALSO FIXED: "newsletter" appeared under both Documents (£30) and Executive
+   ghostwriting (£500/month) with nothing telling them apart. Now distinguished in all
+   four places - one-off versus written in your voice every month.
+
 Also added, since they were needed to tie the new pages in:
   - "prices" in the nav on every page (19 files)
   - 8 new cards in #who-i-help (18 total), 8 new footer links
+  - later: 2 more cards and footer links for documents and ghostwriting (20 in the grid)
+  - a "A document to write or tidy up" option in the enquiry form select on all 21 pages,
+    since those enquiries had nowhere to go except "Something else"
   - blurb + cover letter accordions in #services, with matching schema offers
   - 5 new sprite symbols: fingerprint, stethoscope, calculator, photo, megaphone
   - .stagger delays extended to 18 children, since the niche grid outgrew 10

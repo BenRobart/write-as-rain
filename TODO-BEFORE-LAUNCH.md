@@ -36,20 +36,83 @@ life — UCAS sets these rules and has changed them before.
 ## Prices invented for the two new services
 
 `book-blurb-writing.html` (£120, £90 with an edit, £90 per further book in a series) and
-`cover-letter-writing.html` (£45, £110 with a CV, £150 with CV and LinkedIn) are new
+`cover-letter-writing.html` (£30, £95 with a CV, £140 with CV and LinkedIn) are new
 revenue lines with no existing price to inherit, so those numbers were chosen to ladder
 sensibly against the CV pricing. They appear on the page, in `pricing.html`, in the
 homepage `#services` accordions, in the homepage `makesOffer` schema, and in `llms.txt`.
 Change them in all five places or none.
 
-`document-writing-service.html` (from £45 for a letter or single page, longer documents
+`document-writing-service.html` (from £30 for a letter or single page, longer documents
 quoted flat, tidy-ups cheaper) is the same situation: a new revenue line with no existing
-price to inherit, set at the cover letter price so the two ladder together. It appears on
-the page, in `pricing.html`, in the homepage `#services` accordion, in the homepage
-`makesOffer` schema, and in `llms.txt`. Change it in all five places or none. The page
-also commits to same-day or next-day turnaround on letters and two to three days on
-longer documents, which is a delivery promise rather than a price — worth confirming you
-want to be held to it.
+price to inherit. It appears on the page, in `pricing.html`, in the homepage `#services`
+accordion, in the homepage `makesOffer` schema, and in `llms.txt`. Change it in all five
+places or none.
+
+The cover letter came down to £30 to match, so the two no longer compete on price. Both
+pages still say a letter written to a job advert is a different job - it's answered
+against a person specification and scored - so people route themselves to the right page.
+If the prices ever diverge again, that wording needs to carry the difference explicitly,
+or applicants will read two prices for what looks like the same thing.
+
+The bundles moved with it: CV and letter £110 -> £95, and CV, LinkedIn, and letter
+£150 -> £140. Both keep the £10 saving against buying the pieces separately, which is
+where the old numbers came from.
+
+One number worth a second look: a supporting statement sits in the same £30 tier as a
+cover letter, and it is not the same amount of work. An NHS or local government statement
+answered criterion by criterion against a person specification often runs to 1,000-2,000
+words, against maybe 400 for a letter. Splitting them - the letter at £30, statements at
+£60 or quoted on length - would price the work rather than the format. Left alone for now
+because it's a pricing decision, not a copy one.
+
+The page also commits to same-day or next-day turnaround on letters and two to three days
+on longer documents, which is a delivery promise rather than a price - worth confirming
+you want to be held to it.
+
+`executive-ghostwriting.html` is now two tiers rather than one: £300 a month for the
+conversation and four posts, £500 for eight, or four and a newsletter. The single £500
+retainer it started as is still there as the full package; what's new underneath it is a
+cheaper way in, which matters because this is the one service where a first client can
+never be shown any proof - no case studies, no portfolio, no names, by design.
+
+The tiering isn't linear on purpose. The monthly conversation costs the same whether it
+produces four pieces or eight, so four is £300 rather than £250. The page says that
+outright instead of leaving people to work out why the maths looks odd.
+
+The page justifies the per-word rate rather than asserting it: short-form writing costs
+more per word than long-form, because a 200-word post has to carry an idea, land it above
+the LinkedIn fold, and sound like a specific person, with nothing spare to cut. It cites
+two of this site's own published prices as evidence - a 150-word blurb at £120 against a
+60,000-word copyedit at £350 - so the argument can be checked rather than taken on trust.
+That reasoning is what stops it contradicting the £117 per 1,000 words on book
+ghostwriting, which is long-form and includes the interviews.
+
+Worth knowing what it does NOT try to reconcile with: the £30 cover letter. Both are short,
+one is £30 and one is about £60 a piece. The distinction is one-off consumer work against a
+business retainer, and the two never appear side by side except in different panels on the
+pricing page. Deliberately not addressed anywhere in the copy, because answering it would
+join up two things no real buyer is comparing.
+
+For context if you revisit: UK LinkedIn ghostwriting retainers commonly run £1,000 and up,
+so £300-£500 still sits at the entry end of that market.
+
+`book-ghostwriting.html` carries the biggest invented numbers on the site by a wide margin,
+and they need your sign-off before anything goes live: £450 for a chapter plan and sample
+chapter (deducted from the total), £3,500 up to 30,000 words, £7,000 up to 60,000, then
+£120 per additional 1,000. Those three work out at a consistent ~£117 per 1,000 words, so
+the ladder holds if you move one - move all of them. UK ghostwriting rates run from roughly
+£5,000 at the newer end to £30,000+ for established names, so this sits deliberately low.
+Worth checking against what you'd actually accept for six to nine months of work, because
+a full-length book at £7,000 is around £800 a month if it takes nine.
+
+It also commits to terms, not just prices: staged quarters, the client keeping everything
+if they stop, no royalties or rights taken, and sole credit by default. Those are the parts
+a client will hold you to.
+
+Knock-on: `memoir-life-story.html` and `pricing.html` both used to say interview-based life
+story work was "quoted, flat". They now say "from £3,500" and point at the ghostwriting
+page, because publishing a band on one page and refusing to on another is the kind of thing
+people notice.
 
 `pricing.html` also commits to three policies that weren't written down anywhere before:
 no rush surcharge, no series discount, and splitting a long invoice being a normal
