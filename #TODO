@@ -29,6 +29,9 @@ DONE - Dark mode is a bit chocolatey?
   Desaturated the dark tokens: backgrounds went from hue 21 / 47% sat to hue 28 /
   15%, so the ground reads as bark rather than cocoa. Text and rules dropped the
   same way. Accent pink and the light theme are untouched.
+  Do we have a ghostwriting page?
+  Audit LLMs.txt etc
+  Is new page in line with AI Guidelines
 
 ANALYTICS - both tags are now INSTALLED on all 21 pages, immediately before </head>.
   GA4      G-4W3Q03PS05

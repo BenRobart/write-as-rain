@@ -42,6 +42,15 @@ sensibly against the CV pricing. They appear on the page, in `pricing.html`, in 
 homepage `#services` accordions, in the homepage `makesOffer` schema, and in `llms.txt`.
 Change them in all five places or none.
 
+`document-writing-service.html` (from £45 for a letter or single page, longer documents
+quoted flat, tidy-ups cheaper) is the same situation: a new revenue line with no existing
+price to inherit, set at the cover letter price so the two ladder together. It appears on
+the page, in `pricing.html`, in the homepage `#services` accordion, in the homepage
+`makesOffer` schema, and in `llms.txt`. Change it in all five places or none. The page
+also commits to same-day or next-day turnaround on letters and two to three days on
+longer documents, which is a delivery promise rather than a price — worth confirming you
+want to be held to it.
+
 `pricing.html` also commits to three policies that weren't written down anywhere before:
 no rush surcharge, no series discount, and splitting a long invoice being a normal
 request. All three are consistent with how the rest of the site talks, but they are
