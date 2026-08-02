@@ -50,8 +50,8 @@ Base prices cover manuscripts up to 60,000 words; longer works add a per-1,000-w
 - [Services](https://writeasrain.github.io/#services): full breakdowns and prices for every service.
 - [Prices](https://writeasrain.github.io/pricing.html): every price in one place, with a word count calculator for the three manuscript services, a reference table from 60,000 to 150,000 words, what is and isn't included, and why the numbers are published rather than quoted on request.
 - [Which edit do I need](https://writeasrain.github.io/proofreading-vs-copyediting.html): proofreading, copyediting, and developmental editing compared, including the same paragraph shown at all three levels, the industry's inconsistent vocabulary (line editing, structural editing, manuscript assessment, beta reading, proof-edit), and how to tell which stage a draft is at.
-- [Who I help](https://writeasrain.github.io/#who-i-help): index of the audience-specific pages listed below.
 - [How it works](https://writeasrain.github.io/#process): free sample or assessment, flat quote, the edit, aftercare.
+- [Who I help](https://writeasrain.github.io/#who-i-help): index of the audience-specific pages listed below.
 - [About](https://writeasrain.github.io/#about): who's doing the editing.
 - [Common questions](https://writeasrain.github.io/#faq): editing types compared, costs, turnaround, file formats, British vs American English, and the no-AI policy.
 - [Contact](https://writeasrain.github.io/#contact): enquiry form and email.

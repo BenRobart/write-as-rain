@@ -127,9 +127,37 @@ body > nav.scrolled {
   gap: 20px;
 }
 
-.brand { font-size: 19px; color: var(--ink); }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 19px;
+  color: var(--ink);
+}
 .brand:hover { text-decoration: none; }
 .brand .accent { color: var(--accent); font-style: italic; }
+
+/* The hero drawing again, shrunk to sit beside the wordmark.
+
+   Stroke is in viewBox units, so the same symbol needs a much bigger number
+   here than in the hero — 1.6 at this size renders at a third of a pixel and
+   the book vanishes. But it wants to land *lighter* than the .ill icons, which
+   sit around 1.2–1.6px: this drawing packs fourteen rain strokes and six page
+   lines into the same space those spend on three or four, so what reads as too
+   heavy is the density, not the weight. 3.6 renders at about 0.75px, which
+   keeps the page lines separate and matches the hairlines of the wordmark. */
+.brand-mark {
+  flex-shrink: 0;
+  width: 31px;
+  height: auto;
+  aspect-ratio: 148 / 164;
+  color: var(--accent);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 3.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 
 .nav-links {
   list-style: none;
@@ -1512,14 +1540,21 @@ details[open] > .faq-a {
    its 712px measure but aligns left to the grid instead of centring in the
    viewport, and the art's right edge lands on the grid's right edge. The pair
    then reads as centred. Left as-is, the text centres on its own and the
-   drawing hangs off the right, pulling the whole hero about 120px off centre. */
+   drawing hangs off the right, pulling the whole hero about 120px off centre.
+
+   The svg sits inside .hero-inner, before the h1, purely so it has a sensible
+   place in the flow to fall back to on narrow screens (see below). Up here it
+   is absolute, so its containing block is .hero either way — .hero-inner is
+   not positioned. */
 .hero { position: relative; }
 
 @media (min-width: 1160px) {
   /* width:100% because .hero is a flex container — without it the inner block
      shrink-wraps its content and never reaches the 1040px cap. */
   .hero-inner { max-width: 1040px; width: 100%; }
-  .hero-inner > * { max-width: 712px; }
+  /* The art is excluded by name rather than by source order: it is a child of
+     .hero-inner too, and 712px is not a measure that means anything to it. */
+  .hero-inner > :not(.hero-art) { max-width: 712px; }
 }
 
 .hero-art {
@@ -1567,9 +1602,47 @@ details[open] > .faq-a {
 }
 [data-theme="dark"] .niche-hero-art { opacity: 0.34; }
 
-/* Below this the 760px text column reaches the space the art would occupy */
+/* Below this the 760px text column reaches the space the art would occupy, so
+   the drawing drops out of the margin and leads the hero instead, at the size
+   of an .ill-xl and left-aligned to the copy. Above the headline rather than
+   below the buttons for two reasons: the hero already fills a phone screen, so
+   anything under the CTAs is off the fold on load; and the drawing is rain
+   falling downwards, which wants something underneath it to fall on.
+
+   Stroke weight goes up as the drawing comes down — same trade the .ill sizes
+   make. 2.6 in a 148-unit viewBox renders at about 1.8px at this width, close
+   to what 1.6 gives at 220px. Left at 1.6 the lines render under a pixel and
+   the book turns to grey mush. Opacity lifts for the same reason: 0.32 is
+   right for something sitting behind text in the margin, too faint for a mark
+   the eye is meant to land on first. */
 @media (max-width: 1159px) {
-  .hero-art, .niche-hero-art { display: none; }
+  .niche-hero-art { display: none; }
+
+  .hero-art {
+    position: static;
+    /* Absolute positioning was blockifying this for free. In flow an svg is an
+       inline replaced element, which would put it on a text line, give it a
+       descender gap, and drop the margin below. */
+    display: block;
+    width: 104px;
+    max-width: none;
+    /* aspect-ratio rather than height:auto alone, which leans on the viewBox
+       giving the svg an intrinsic ratio */
+    height: auto;
+    aspect-ratio: 148 / 164;
+    transform: none;
+    /* The hero's 64px padding-top is exactly the height of the fixed nav, which
+       was all the h1 needed. Once the art goes in above it the stack is taller
+       than the 88vh min-height, so nothing is centred any more and the top of
+       the drawing lands flush against the nav. */
+    margin-top: 24px;
+    margin-bottom: 26px;
+    stroke-width: 2.6;
+    animation-duration: 1.4s;
+    animation-delay: 0.1s;
+  }
+  .hero-art use { opacity: 0.5; }
+  [data-theme="dark"] .hero-art use { opacity: 0.6; }
 }
 
 /* Service group headings */
