@@ -369,8 +369,27 @@ section { padding: 96px 0; }
   text-wrap: balance;
 }
 
+/* Three gaps, one per job the heading is actually doing.
+
+   The 56px above is sized for what usually follows it: the FAQ list, a price
+   panel, the process list, the niche grid. Every one of those puts a border or
+   a marker on that line, so the eye has something to land on and the space
+   reads as deliberate. Plain body copy carries no such anchor, which is why the
+   identical 56px under "About your editor" read as a hole rather than a gap.
+   A standfirst paragraph belongs to the heading rather than to the section
+   below it, so it closes up further and groups with it.
+
+   Browsers without :has() get 56px throughout — where this started, rather
+   than a broken layout. */
+.section-title:has(+ .about-inner),
+.section-title:has(+ .prose) { margin-bottom: 40px; }
+.section-title:has(+ p) { margin-bottom: 26px; }
+
 @media (max-width: 700px) {
   .section-title { gap: 14px; margin-bottom: 40px; }
+  .section-title:has(+ .about-inner),
+  .section-title:has(+ .prose) { margin-bottom: 30px; }
+  .section-title:has(+ p) { margin-bottom: 20px; }
 }
 
 /* Scoped to .js (set by site.js) so the page is fully visible without scripting */
@@ -433,7 +452,7 @@ section { padding: 96px 0; }
 .services-intro {
   text-align: center;
   max-width: 660px;
-  margin: -26px auto 12px;
+  margin: 0 auto 12px;
   font-size: 15px;
   color: var(--ink-soft);
 }
@@ -445,6 +464,15 @@ section { padding: 96px 0; }
   font-size: 13.5px;
   color: var(--ink-faint);
 }
+/* Last thing in the section on the niche and pricing pages, where the 48px
+   would otherwise stack on top of the section's own 96px of bottom padding. */
+.services-order:last-child { margin-bottom: 0; }
+/* The worked example under a price panel. Was inline on eleven pages, at 26px
+   on ten of them and 30px on the eleventh. */
+.price-panel + .services-order { margin-top: 26px; }
+/* The 12px above is sized for a .services-order following it. Where the intro
+   introduces the grid directly, it carries the whole gap itself. */
+.services-intro + .niche-grid { margin-top: 44px; }
 
 .service-group { max-width: 840px; margin: 0 auto 52px; }
 .service-group:last-of-type { margin-bottom: 0; }
@@ -591,9 +619,10 @@ section { padding: 96px 0; }
 
 /* === CONTACT === */
 .contact-inner { max-width: 640px; margin: 0 auto; text-align: center; }
-/* The 56px under .section-title is sized for the grids it usually introduces;
-   here it sits above a single line of copy, so it wants to be tighter */
-.contact-inner .section-title { margin-bottom: 26px; }
+/* The tightening this section used to do for itself now comes from the
+   standfirst rule up in SECTIONS, which applies it at every width. The
+   override here was two classes deep, so it outranked the mobile step and
+   left the contact heading looser on a phone than the ones above it. */
 .contact-inner > p { margin-bottom: 30px; color: var(--ink-soft); }
 
 .contact-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
@@ -917,6 +946,14 @@ footer {
 .niche-hero { padding: 40px 0 72px; }
 .niche-hero-inner { max-width: 760px; }
 
+/* The hero already lays down 72px under its own content, so the section that
+   follows drops its top padding rather than adding a second 96px to it. Every
+   page did this with an inline style; this is the same thing said once. */
+.niche-hero + section { padding-top: 0; }
+/* Two pages open on unframed copy instead of the bordered .pain-list, whose
+   own 28px of padding is what supplies the air everywhere else. */
+.niche-hero + section > .container.prose { padding-top: 12px; }
+
 .eyebrow {
   font-size: 12px;
   letter-spacing: 0.16em;
@@ -1081,6 +1118,26 @@ footer {
   .price-row .price-how-much { white-space: normal; }
 }
 
+/* Subhead naming the panel beneath it. The panel carries a 32px top margin for
+   the case where it follows body copy, and adjacent sibling margins collapse to
+   the larger of the two — so a small margin set here is swallowed whole, and
+   the label ends up drifting toward whatever sits above it rather than binding
+   to the panel it names. Zeroing the panel's own margin is what actually
+   closes the pair up. */
+.panel-label {
+  max-width: 740px;
+  margin: 38px auto 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 19px;
+}
+.panel-label .ill { flex-shrink: 0; color: var(--accent); }
+.panel-label + .price-panel { margin-top: 10px; }
+/* First label in a section keeps the full heading gap: label and panel are one
+   block, and the section heading is introducing the block, not the label. */
+.section-title + .panel-label { margin-top: 0; }
+
 /* Word count calculator — pricing page. Shares the price panel's frame so the
    two blocks read as one idea rather than two widgets. */
 .calc {
@@ -1090,6 +1147,14 @@ footer {
   border-radius: 2px;
   overflow: hidden;
 }
+
+/* Opens the pricing page with a section mark and heading rather than the
+   bordered .pain-list the niche pages use, so it wants a little of its top
+   padding back. */
+#calculator { padding-top: 24px; }
+
+/* The same figures as a table, under the calculator. */
+.calc + .prose { margin-top: 34px; }
 
 .calc-field {
   display: flex;
@@ -1285,10 +1350,16 @@ html:not(.js) .calc-stepper { display: none; }
 .cta-band p { color: var(--ink-soft); margin-bottom: 26px; }
 .cta-band .contact-buttons { margin-bottom: 18px; }
 .cta-band .small { font-size: 13.5px; color: var(--ink-faint); margin-bottom: 0; }
+/* The thanks page puts the small print above the buttons rather than below, so
+   the zeroed margin lands on the wrong side and the buttons supply the gap. */
+.cta-band .small + .contact-buttons { margin-top: 26px; }
 
 /* Related-pages strip */
 .related { max-width: 780px; margin: 0 auto; }
 .related h2 { font-size: 20px; margin-bottom: 18px; }
+/* The 404 page reuses this strip as a grouped sitemap, so it runs to several
+   headings where every other page has one. */
+.related ul + h2 { margin-top: 40px; }
 .related ul { list-style: none; display: grid; gap: 12px; }
 .related li { font-size: 15px; color: var(--ink-faint); }
 .related li a { font-weight: 600; }
