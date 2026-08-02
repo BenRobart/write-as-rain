@@ -1,118 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- BEFORE LAUNCH: replace every REPLACE-DOMAIN with the live domain, then submit
-     this file in Google Search Console and Bing Webmaster Tools. -->
+<!-- Submit this file in Google Search Console and Bing Webmaster Tools. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://REPLACE-DOMAIN/</loc>
+    <loc>https://writeasrain.github.io/</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/pricing.html</loc>
+    <loc>https://writeasrain.github.io/pricing.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/proofreading-vs-copyediting.html</loc>
+    <loc>https://writeasrain.github.io/proofreading-vs-copyediting.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/romance-editor.html</loc>
+    <loc>https://writeasrain.github.io/romance-editor.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/crime-thriller-editor.html</loc>
+    <loc>https://writeasrain.github.io/crime-thriller-editor.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/fantasy-scifi-editor.html</loc>
+    <loc>https://writeasrain.github.io/fantasy-scifi-editor.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/memoir-life-story.html</loc>
+    <loc>https://writeasrain.github.io/memoir-life-story.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/agent-submission-help.html</loc>
+    <loc>https://writeasrain.github.io/agent-submission-help.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/book-blurb-writing.html</loc>
+    <loc>https://writeasrain.github.io/book-blurb-writing.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/ebook-formatting-kdp.html</loc>
+    <loc>https://writeasrain.github.io/ebook-formatting-kdp.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/journal-english-editing.html</loc>
+    <loc>https://writeasrain.github.io/journal-english-editing.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/phd-thesis-proofreading.html</loc>
+    <loc>https://writeasrain.github.io/phd-thesis-proofreading.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/ucas-personal-statement.html</loc>
+    <loc>https://writeasrain.github.io/ucas-personal-statement.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/medicine-personal-statement.html</loc>
+    <loc>https://writeasrain.github.io/medicine-personal-statement.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/cv-writing-career-change.html</loc>
+    <loc>https://writeasrain.github.io/cv-writing-career-change.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/cover-letter-writing.html</loc>
+    <loc>https://writeasrain.github.io/cover-letter-writing.html</loc>
     <lastmod>2026-07-31</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/grant-writing-charities.html</loc>
+    <loc>https://writeasrain.github.io/grant-writing-charities.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/wedding-speech-writer.html</loc>
+    <loc>https://writeasrain.github.io/wedding-speech-writer.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://REPLACE-DOMAIN/eulogy-writing.html</loc>
+    <loc>https://writeasrain.github.io/eulogy-writing.html</loc>
     <lastmod>2026-07-30</lastmod>
     <priority>0.8</priority>
   </url>

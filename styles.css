@@ -591,6 +591,9 @@ section { padding: 96px 0; }
 
 /* === CONTACT === */
 .contact-inner { max-width: 640px; margin: 0 auto; text-align: center; }
+/* The 56px under .section-title is sized for the grids it usually introduces;
+   here it sits above a single line of copy, so it wants to be tighter */
+.contact-inner .section-title { margin-bottom: 26px; }
 .contact-inner > p { margin-bottom: 30px; color: var(--ink-soft); }
 
 .contact-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }

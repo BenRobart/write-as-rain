@@ -1,25 +1,18 @@
 # Before this site goes live
 
-Two things left. Nothing else is blocking.
+One thing left — the UCAS check in §3. Nothing else is blocking.
 
-## 1. The domain — 157 placeholders across 24 files
+## 1. ~~The domain~~ — done
 
-Every canonical URL, Open Graph URL, sitemap entry and schema `@id` currently says
-`REPLACE-DOMAIN`. **A wrong canonical tag is worse than none at all**, so this has to be
-done before the site is indexed.
+The site is live at **https://writeasrain.github.io/**, served from the
+`writeasrain/writeasrain.github.io` repo. All 169 placeholders across 22 files were
+replaced: canonicals, Open Graph URLs, sitemap entries, schema `@id`s, `robots.txt`,
+`llms.txt`, and the contact form's hidden `_next` redirect.
 
-From this folder, in Git Bash:
-
-```bash
-grep -rl 'REPLACE-DOMAIN' . | xargs sed -i 's|REPLACE-DOMAIN|writeasrain.co.uk|g'
-```
-
-(substituting your actual domain, no `https://` and no trailing slash — those are already
-in the files). Then check nothing was missed:
-
-```bash
-grep -rn 'REPLACE-DOMAIN' . || echo "all clear"
-```
+No `CNAME` file is needed — `github.io` is served over HTTPS by default. One consequence
+worth knowing: a `hello@` address is **not** possible on `github.io`, because the domain
+is GitHub's and has no MX records you can point anywhere. The contact email stays
+`robartben@gmail.com` unless a real domain gets bought later.
 
 ## 2. ~~The contact form~~ — done
 

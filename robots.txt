@@ -1,9 +1,8 @@
 # Write as Rain - robots.txt
 # All crawlers welcome, AI crawlers included.
 # An LLM-friendly summary of this site lives at /llms.txt
-# BEFORE LAUNCH: replace REPLACE-DOMAIN in the Sitemap line below.
 
-Sitemap: https://REPLACE-DOMAIN/sitemap.xml
+Sitemap: https://writeasrain.github.io/sitemap.xml
 
 User-agent: *
 Allow: /
