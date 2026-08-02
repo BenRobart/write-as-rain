@@ -1521,6 +1521,12 @@ details[open] > .faq-a {
 .prose > h2 { display: flex; align-items: baseline; gap: 12px; }
 .prose > h2 .ill { flex-shrink: 0; color: var(--accent); }
 
+/* Sub-headings get the same treatment one size down. Three pages break a section
+   into named parts, and without this the run between two section marks reads as
+   a wall of text however many marks the page carries in total. */
+.prose > h3 { display: flex; align-items: baseline; gap: 10px; }
+.prose > h3 .ill { flex-shrink: 0; color: var(--accent); }
+
 /* Headings that sit inside a bordered block */
 .pain-list h2,
 .related h2 { display: flex; align-items: center; gap: 11px; }

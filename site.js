@@ -489,7 +489,7 @@
           form.classList.remove('is-sending');
           status.className = 'form-status is-error';
           status.innerHTML = 'Something went wrong sending that – the fault is mine, not yours. ' +
-            'Please email me at <a href="mailto:robartben@gmail.com">robartben@gmail.com</a> ' +
+            'Please email me at <a href="mailto:writeasrainuk@gmail.com">writeasrainuk@gmail.com</a> ' +
             'and I\'ll pick it up from there.';
         });
       });

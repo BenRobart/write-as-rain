@@ -1,6 +1,8 @@
 # Before this site goes live
 
-One thing left — the UCAS check in §3. Nothing else is blocking.
+Nothing is blocking. The only step that can't be done from a text editor is sending one
+real message through the contact form (§2) once you're happy — that's the sole way to
+find out it works.
 
 ## 1. ~~The domain~~ — done
 
@@ -12,24 +14,24 @@ replaced: canonicals, Open Graph URLs, sitemap entries, schema `@id`s, `robots.t
 No `CNAME` file is needed — `github.io` is served over HTTPS by default. One consequence
 worth knowing: a `hello@` address is **not** possible on `github.io`, because the domain
 is GitHub's and has no MX records you can point anywhere. The contact email stays
-`robartben@gmail.com` unless a real domain gets bought later.
+`writeasrainuk@gmail.com` unless a real domain gets bought later.
 
 ## 2. ~~The contact form~~ — done
 
 `index.html` now posts to a real Formspree endpoint. Worth sending one test message
 after the domain change, since that's the only way to find out it works.
 
-## 3. Verify the UCAS three-question format
+## 3. ~~Verify the UCAS three-question format~~ — verified August 2026
 
-`ucas-personal-statement.html` states that from 2026 entry UCAS replaced the single
-personal statement with three questions, 4,000 characters total, minimum 350 per question.
-Confirm the exact wording and limits on the UCAS site for the current cycle before
-publishing — the page already tells readers to do the same, but the page itself should
-be right. This is the one factual claim on the site that has a shelf life.
+Checked against UCAS directly: three questions, **4,000 characters total**, **minimum 350
+per question**, and the questions themselves don't count toward the limit. Both
+`ucas-personal-statement.html` and `medicine-personal-statement.html` state this correctly,
+and their wording of the three questions matches UCAS's own. The earlier October deadline
+for medicine, dentistry, veterinary science and Oxbridge is right, and both pages hedge it
+properly by telling readers to confirm the date for their cycle.
 
-`medicine-personal-statement.html` repeats the same three questions and adds the earlier
-October deadline for medicine, dentistry, veterinary science and Oxbridge. Same check,
-same page on the UCAS site.
+**Re-check this every cycle.** It remains the one factual claim on the site with a shelf
+life — UCAS sets these rules and has changed them before.
 
 ## Prices invented for the two new services
 
@@ -49,8 +51,17 @@ policies, so they're yours to confirm or cut.
 
 ## After launch
 
-- Submit `sitemap.xml` in Google Search Console and Bing Webmaster Tools.
-- Add an `og:image` (1200×630) and a favicon. Social shares are currently text-only.
+- **Submit `sitemap.xml` in Google Search Console.** The property is already verified via
+  `google99d958bd68ae300d.html` at the repo root — leave that file there permanently, as
+  Google re-checks it and un-verifies the property if it vanishes.
+- **Add the site to Bing Webmaster Tools.** Bing can import a verified GSC property, which
+  is faster than verifying from scratch.
+- ~~`og:image` and favicon~~ — done. `og-image.png` (1200×630) on all 19 content pages,
+  plus `favicon.ico` and `apple-touch-icon.png`. Regenerate any of them from `favicon.svg`
+  with `python scripts/build-icons.py`.
+- **Analytics is live**: GA4 `G-4W3Q03PS05` and Clarity `xw679pu73i`, on all 21 pages.
+  Confirm both are receiving hits a day or so after launch — a tag that silently fails is
+  worse than no tag, because you'll trust the empty numbers.
 - Set up a Google Business Profile if you want to appear in local "editor near me" results.
 
 ## Note on FAQ schema

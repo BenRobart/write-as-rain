@@ -1,7 +1,11 @@
 DONE - Best man page - liked the story at the top of the page
 DONE - Breadcrumbs are ugly
 DONE - FAQ shouldn't close others when a new answer is clicked
-DONE - Favicon (favicon.svg, linked from all 21 pages. Safari ignores SVG favicons, so a favicon.ico fallback is still outstanding)
+DONE - Favicon. favicon.svg, favicon.ico (16/32/48/64) and apple-touch-icon.png (180),
+  all linked root-absolute from all 21 pages. Safari and older browsers take the .ico;
+  iOS home screen takes the apple-touch-icon, which is square and opaque on purpose
+  because iOS masks its own corners. Regenerate with scripts/build-icons.py after any
+  change to favicon.svg - it reads the SVG, so the rasters can't drift from the source.
 DONE - Mention of working at TOF
 DONE - Logo at top left - Write doesn't line up properly
 DONE - FAQs - should be indented when hovered, but shouldn't stay indented if they're clicked unless still hovered
@@ -9,29 +13,30 @@ DONE - Homepage SVG disappears when changing between light/dark
 DONE - Needs more smaller SVGs throughout the site
 DONE -  Analytics, GSC, Clarity
 DONE - Fix gap between title and text on "Get in touch"
-Add more SVGs? Long section on proofreading-vs-copyediting with none - do any other pages do this?
+DONE - Add more SVGs? Long section on proofreading-vs-copyediting with none - do any other pages do this?
+  Yes, two others did. The cause was that a bare <h3> was the one heading level that
+  never got a mark, and only three pages use non-FAQ h3s at all. Longest unillustrated
+  run of prose, before and after: proofreading-vs-copyediting 522 -> 211 words,
+  pricing 405 -> 150, agent-submission-help 297 -> 199. The whole site now sits in a
+  150-272 band where it used to run 164-522. Count per page was never the problem;
+  proofreading-vs-copyediting already had 15, bang on the site average.
+  pricing's four were a straight inconsistency - the same four category headings as
+  the homepage's service groups, illustrated there and bare here, so they now reuse
+  the identical icons (book-open, mortarboard, briefcase, mic).
 DONE - Update email to writeasrainuk@gmail.com
-Change my name
+DONE - Change my name
 
-ANALYTICS:
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4W3Q03PS05"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4W3Q03PS05');
-</script>
-
-CLARITY:
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xw679pu73i");
-</script>
+ANALYTICS - both tags are now INSTALLED on all 21 pages, immediately before </head>.
+  GA4      G-4W3Q03PS05
+  Clarity  xw679pu73i
+  GSC      google99d958bd68ae300d.html at the repo root, the HTML-file method. It has
+           to stay there forever; Google re-checks it and un-verifies the property if
+           it disappears. Do not add it to sitemap.xml.
+  Both tags are on 404.html and thanks.html too, deliberately - thanks.html is the
+  closest thing to a conversion, and 404 hits are how broken inbound links show up.
+  Neither tag is on google99d958bd68ae300d.html, which is a bare verification stub.
+  STILL TO DO: submit sitemap.xml in GSC, and add the site to Bing Webmaster Tools
+  (Bing can import from GSC, which is quicker than verifying again).
 
 
 
@@ -42,12 +47,12 @@ DONE - Replace REPLACE-DOMAIN. All 169 across 22 files now read writeasrain.gith
   form's hidden _next. The four stale "BEFORE LAUNCH" comments that carried the
   placeholder were removed in the same pass.
 
-DECIDE - the contact email. robartben@gmail.com appears in 20+ mailto links, the
-  ProfessionalService schema on index.html, the form's error fallback in site.js,
-  and llms.txt. NOTE - hello@writeasrain.github.io is NOT possible. github.io is
-  GitHub's domain, not ours, so there are no MX records to point anywhere and no
-  mailbox to create. A branded address needs a real domain. Until then it stays
-  gmail, which is the one visible tell that this isn't on its own domain.
+DONE - contact email is writeasrainuk@gmail.com, swapped in all 70 places: 41 mailto
+  links, the ProfessionalService schema on index.html, the form's error fallback in
+  site.js, and llms.txt. No occurrence of the old address remains anywhere.
+  NOTE - hello@writeasrain.github.io is NOT possible. github.io is GitHub's domain,
+  not ours, so there are no MX records to point anywhere and no mailbox to create.
+  A branded address needs a real domain.
 
 GITHUB PAGES - live at https://writeasrain.github.io/, served from the repo
   writeasrain/writeasrain.github.io. The writeasrain org is owned by BenRobart -
@@ -70,9 +75,12 @@ TEST THE FORM once live - send one real message and confirm it arrives. That is
   its own domain, so the first one often lands there.
 
 DONE - Formspree form ID - index.html still says YOUR_FORM_ID, so the contact form does nothing
-Verify UCAS three-question format against UCAS site before publishing - now stated on
-  two pages: ucas-personal-statement.html and medicine-personal-statement.html (which also
-  claims the earlier October deadline for medicine, dentistry, vet and Oxbridge)
+DONE - UCAS three-question format VERIFIED against ucas.com (Aug 2026). Three questions,
+  4,000 characters total, minimum 350 per question, questions themselves not counted -
+  all correct as stated on ucas-personal-statement.html and medicine-personal-statement.html,
+  and the wording of the three questions matches UCAS's own. The October deadline for
+  medicine, dentistry, vet and Oxbridge is correct and both pages hedge it properly.
+  RE-CHECK EACH CYCLE. This is still the one claim on the site with a shelf life.
 
 
 === NEW PAGES - all eight built, need a read-through ===
@@ -122,7 +130,11 @@ Also added, since they were needed to tie the new pages in:
 === NON-PAGE, HIGHER IMPACT THAN PAGES 7-8 ===
 
 Google Business Profile - currently invisible for "editor near me" searches
-og:image (1200x630) - social shares are plain text everywhere the site gets mentioned
+DONE - og:image. og-image.png, 1200x630, on all 19 content pages (not 404 or thanks,
+  which should never produce a share card). twitter:card raised from summary to
+  summary_large_image at the same time, or the image would have shown as a thumbnail.
+  The 18 niche pages carry only twitter:card and inherit title/description/image from
+  the og: tags, which is Twitter's documented fallback - not an omission.
 Submit sitemap.xml to Google Search Console and Bing Webmaster Tools
 
 
@@ -164,6 +176,11 @@ Illustrations are one shared SVG sprite, injected by site.js and referenced as
   wants: a .niche-hero-art after the hero container, a .section-mark above each
   .section-title and above the .cta-band h2, a mark inside the .pain-list h2,
   the .callout and the .related h2, and a .footer-mark above the copyright line.
+  Every h2 in a .prose block carries an .ill-hd, and every h3 in one carries an
+  .ill-sm - both are laid out by CSS (.prose > h2, .prose > h3), so a heading
+  without a mark now looks like an oversight rather than a choice. Judge the
+  spacing by the longest run of prose with no mark in it, not by the count per
+  page: the count was even across the site while the spacing was not.
   New drawings go in the sprite in site.js, not inline.
   Keep every symbol's viewBox origin at 0 0. <use> defaults to x="0" y="0", so a
   symbol starting anywhere else renders offset by that amount and gets clipped.

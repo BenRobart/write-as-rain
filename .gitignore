@@ -1,0 +1,4 @@
+# Playfair Display, fetched on demand by scripts/build-icons.py for the og:image.
+# Not committed: it is a 300KB binary that Google Fonts already serves to the site,
+# and the script re-downloads it if missing.
+scripts/.cache/
