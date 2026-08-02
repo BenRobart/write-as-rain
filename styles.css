@@ -15,15 +15,17 @@
   --shadow-soft: 0 10px 30px rgba(43, 33, 24, 0.08);
 }
 
+/* Dark tones stay brown, but held around hue 28° at roughly half the
+   saturation of the light theme's warmth — bark and cold tea, not cocoa. */
 [data-theme="dark"] {
-  --bg: #1e1510;
-  --bg-alt: #261a14;
-  --ink: #f0e6da;
-  --ink-soft: #cebaac;
-  --ink-faint: #988171;
+  --bg: #1a1613;
+  --bg-alt: #221d19;
+  --ink: #eee7de;
+  --ink-soft: #c9bcb0;
+  --ink-faint: #97897c;
   --accent: #e08d92;
   --accent-soft: rgba(224, 141, 146, 0.16);
-  --rule: #3c2c23;
+  --rule: #372f28;
   --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
