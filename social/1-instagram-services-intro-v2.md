@@ -1,4 +1,8 @@
-# Caption for 1-instagram-services-intro-v2.png
+# Caption for 1-instagram-services-intro-v2.png and -v3.png
+
+v3 is v2 with the logo's three rows of rain spaced slightly further apart, which
+is the spacing the site now uses. Post v3; the caption below is unchanged, so
+this file covers both rather than forking the prices into a second copy.
 
 Instagram shows roughly the first 125 characters before "more", so the first two
 lines have to earn the tap. Everything below is written to be pasted as one

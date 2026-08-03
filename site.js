@@ -282,10 +282,26 @@
         '<path d="M74 84v70"/>' +
         '<path d="M24 90c14 2.5 28 6.5 40 11M24 104c14 2.5 28 6.5 40 11M24 118c14 2.5 28 6.5 40 11"/>' +
         '<path d="M124 90c-14 2.5-28 6.5-40 11M124 104c-14 2.5-28 6.5-40 11M124 118c-14 2.5-28 6.5-40 11"/>' +
+        // Three rows of rain, spaced so the bands read as separate showers
+        // rather than one block, and held clear of the book. Two things do that
+        // work, and the obvious lever — sliding the rows apart — is neither:
+        //
+        //   * the stagger inside each row, halved from its original spread of
+        //     8 units. Before that, row 1's lowest stroke ended at exactly the
+        //     y row 2's highest one began, so the bands interlocked however far
+        //     apart their midlines sat. This is what opens the gaps to 6 and 4.
+        //   * stroke length, down about 11% (18/16/12 to 16/14/11). The top row
+        //     starts at y=3 and cannot rise: a symbol clips at its viewBox, and
+        //     at the navbar's 3.6 stroke that already leaves the round cap 1.2
+        //     off the edge. So lifting the field off the book had to come out
+        //     of the strokes rather than out of the row positions.
+        //
+        // The lowest stroke ends at (50.5,63), against the left page's top
+        // curve, which passes through y≈72.6 there. Lean stays near 1:3.
         '<g opacity=".72">' +
-          '<path d="m18 10-6 18M42 6l-6 18M66 14l-6 18M90 8l-6 18M114 12l-6 18M138 8l-6 18"/>' +
-          '<path d="m30 36-5 16M54 32l-5 16M78 38l-5 16M102 34l-5 16M126 30l-5 16"/>' +
-          '<path d="m54 54-4 12M78 58l-4 12M102 52l-4 12"/>' +
+          '<path d="m18 5-5 16M42 3l-5 16M66 7l-5 16M90 4l-5 16M114 6l-5 16M138 4l-5 16"/>' +
+          '<path d="m30 32-4.5 14M54 30l-4.5 14M78 33l-4.5 14M102 31l-4.5 14M126 29l-4.5 14"/>' +
+          '<path d="m54 52-3.5 11M78 54l-3.5 11M102 51l-3.5 11"/>' +
         '</g>' +
       '</symbol>'
     ].join('');

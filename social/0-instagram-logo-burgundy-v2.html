@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<title>Write as Rain — Instagram avatar (burgundy, v2)</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1080px; }
+  body {
+    background: #6d1f2a;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Paper grain, as on the site. Lifted on the burgundy ground, where the
+     same opacity reads as dirt rather than texture. */
+  .grain {
+    position:absolute; inset:0; z-index:5; pointer-events:none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* 620px wide puts the drawing's half-diagonal at 462px, inside the 540px
+     radius Instagram crops to. Sized up from a first pass at 520px, which left
+     the mark stranded in empty ground and, because stroke-width is in viewBox
+     units and scales with the drawing, too fine to hold at the 110px the
+     avatar actually renders at in a feed header. */
+  .mark {
+    width: 620px;
+    height: auto;
+    aspect-ratio: 148 / 164;
+    color: #faf5ec;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 3.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    position: relative;
+    z-index: 2;
+  }
+</style>
+</head>
+<body>
+  <!-- The mark, with the three rows of rain spaced further apart and lifted off
+       the book since the first cut of this avatar; wr-art-book in site.js carries
+       the same geometry and the reasoning behind it. -->
+  <svg class="mark" viewBox="0 0 148 164" aria-hidden="true">
+    <path d="M74 84C60 74 40 68 14 68c-3 23-3 47 0 70 26 0 46 6 60 16Z"/>
+    <path d="M74 84c14-10 34-16 60-16 3 23 3 47 0 70-26 0-46 6-60 16Z"/>
+    <path d="M74 84v70"/>
+    <path d="M24 90c14 2.5 28 6.5 40 11M24 104c14 2.5 28 6.5 40 11M24 118c14 2.5 28 6.5 40 11"/>
+    <path d="M124 90c-14 2.5-28 6.5-40 11M124 104c-14 2.5-28 6.5-40 11M124 118c-14 2.5-28 6.5-40 11"/>
+    <g opacity=".72">
+      <path d="m18 5-5 16M42 3l-5 16M66 7l-5 16M90 4l-5 16M114 6l-5 16M138 4l-5 16"/>
+      <path d="m30 32-4.5 14M54 30l-4.5 14M78 33l-4.5 14M102 31l-4.5 14M126 29l-4.5 14"/>
+      <path d="m54 52-3.5 11M78 54l-3.5 11M102 51l-3.5 11"/>
+    </g>
+  </svg>
+<div class="grain"></div>
+</body>
+</html>
