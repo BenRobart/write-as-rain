@@ -67,8 +67,8 @@ POSTS = [
     dict(
         n=3, slug="free-sample-edit", icon="wr-page-pencil", group="Before you pay",
         headline="Send me your\nfirst 1,000 words",
-        body="I'll edit them properly. Tracked changes, comments, the lot, exactly the "
-             "way I'd work on the whole manuscript. Then I send them back and you decide.",
+        body="A sample edit, done properly. Tracked changes, comments, the lot, exactly "
+             "the way I'd work on the whole manuscript. Then I send them back and you decide.",
         points=[
             "No payment, and no obligation afterwards",
             "No follow-up emails if you decide against it",
@@ -80,8 +80,8 @@ POSTS = [
     dict(
         n=4, slug="book-ghostwriting", icon="wr-book-open", group="Ghostwriting",
         headline="The book you've\nbeen going to write",
-        body="Written from recorded conversations, chapter by chapter. Memoirs, business "
-             "books, family life stories, and novel collaborations.",
+        body="Ghostwritten from recorded conversations, chapter by chapter. Memoirs, "
+             "business books, family life stories, and novel collaborations.",
         points=[
             "You own the manuscript and the copyright",
             "No royalties taken, and no credit unless you want it",
@@ -135,8 +135,8 @@ POSTS = [
     dict(
         n=8, slug="submission-package", icon="wr-envelope", group="Books and publishing",
         headline="Form rejections\ndon't tell you\nwhat went wrong",
-        body="Agents send the same line to everyone. Working out whether it's the book, "
-             "the query, the synopsis, or the opening chapter is the whole job.",
+        body="Agents send the same line to everyone. A submission has four moving parts, "
+             "and working out which one is failing is the whole job.",
         points=[
             "Query letter in UK or US convention",
             "One-page synopsis, which is its own dark art",
@@ -148,8 +148,8 @@ POSTS = [
     dict(
         n=9, slug="memoir", icon="wr-books", group="Memoir and life story",
         headline="A life is not\na plot",
-        body="Memoir editing for a book you're publishing, life story writing for one the "
-             "family keeps. They are different jobs and they get priced differently.",
+        body="Memoir editing for a book you're publishing, ghostwriting for a life story "
+             "the family keeps. They are different jobs and they get priced differently.",
         points=[
             "Structure that carries a reader who never knew you",
             "Honest guidance on writing about the living",
@@ -187,8 +187,8 @@ POSTS = [
     dict(
         n=12, slug="personal-statements", icon="wr-plane", group="Applications and careers",
         headline="The statement you wrote,\nmade to work harder",
-        body="UCAS, Oxbridge, medicine and dentistry, postgraduate, and US college essays. "
-             "Your draft, edited and coached – never one written for you.",
+        body="Personal statements for UCAS, Oxbridge, medicine and dentistry, postgraduate, "
+             "and US college. Your draft, edited and coached – never one written for you.",
         points=[
             "Reflection that beats a list of placements",
             "Nothing in it you couldn't defend at interview",
@@ -213,8 +213,9 @@ POSTS = [
     dict(
         n=14, slug="grant-writing", icon="wr-hand-heart", group="Business",
         headline="Bids written the way\nassessors score them",
-        body="Small charities and SMEs without a fundraising team. Answered point by point "
-             "against the funder's own guidance, because that's how it gets marked.",
+        body="Grants and tenders for small charities and SMEs without a fundraising team. "
+             "Answered point by point against the funder's own guidance, because that's "
+             "how it gets marked.",
         points=[
             "A free go/no-go verdict before you spend anything",
             "Never on commission, so the advice stays honest",
@@ -226,8 +227,8 @@ POSTS = [
     dict(
         n=15, slug="executive-ghostwriting", icon="wr-quill", group="Business",
         headline="The posts you keep\nmeaning to write",
-        body="LinkedIn and newsletters in your voice, built from one recorded conversation "
-             "a month. Nothing is published without your sign-off.",
+        body="LinkedIn posts and newsletters ghostwritten in your voice, built from one "
+             "recorded conversation a month. Nothing is published without your sign-off.",
         points=[
             "No account access needed, ever",
             "No credit taken anywhere, it's your name on it",
@@ -252,8 +253,8 @@ POSTS = [
     dict(
         n=17, slug="speeches", icon="wr-mic", group="Occasions",
         headline="You've got the stories.\nFive minutes is\nthe hard part",
-        body="Wedding, best man, father of the bride, maid of honour, retirement. Written "
-             "from a conversation, timed to your slot, with the pauses marked.",
+        body="Wedding, best man, father of the bride, maid of honour, retirement. Speeches "
+             "written from a conversation, timed to your slot, with the pauses marked.",
         points=[
             "Timed properly, because overrunning is the fear",
             "Your material in your phrasing, not a template",
@@ -268,7 +269,7 @@ POSTS = [
     dict(
         n=18, slug="eulogy", icon="wr-candle", group="Eulogies",
         headline="You talk about them.\nI write it",
-        body="Usually one phone call is enough. You don't need anything written down "
+        body="A eulogy usually takes one phone call. You don't need anything written down "
              "first, or to know yet what you want to say.",
         points=[
             "Short notice is normal, so say if it's Friday",

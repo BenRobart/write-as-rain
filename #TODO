@@ -206,6 +206,28 @@ Personal anecdotes - biggest remaining gap vs Ben's own writing samples. Site ha
 Decide on Oxford comma - guidelines contradict themselves (avoid-list vs do-list).
   Currently inconsistent-but-natural, which is what humans do. Uniform if preferred.
 
+TEST WORDING ON THE SOCIAL POSTS - not urgent, and nothing existing gets scrapped.
+  The headlines currently lead on the problem rather than the service ("The book
+  you've been going to write", "The posts you keep meaning to write"). That should
+  be better for a scroller, who is not searching for anything, but it is a guess
+  and it has never been tested against the plainer version that names the service.
+  The ghostwriting ones are where it matters most, and the word is scarcer than it
+  looks. Checked against the POSTS table on 5 Aug 2026:
+    post 4  book ghostwriting      - "ghostwriting" appears in the eyebrow only
+    post 15 executive ghostwriting - does not appear anywhere on the graphic
+    post 9  memoir                 - does not appear anywhere on the graphic,
+                                     though the post sells writing from £3,500
+  So on 15 and 9 a reader who doesn't already know the word exists never meets it,
+  and Instagram's search has no text to match on either.
+  HOW TO TEST WITHOUT LOSING ANYTHING: build the alternative as a second file
+  rather than editing the entry - scripts/build-social.py, then render to
+  <n>-instagram-<slug>-variant-<x>.png, the same naming used when the points panel
+  was chosen. Post one, wait, post the other on a comparable day, and compare the
+  campaign rows in Analytics rather than likes: /ig_ghostwriting and
+  /ig_exec_ghostwriting already tag the traffic, so the comparison is free.
+  Worth remembering the captions do use the word throughout - this is about what
+  the image says on its own, since that is all most people will read.
+
 
 === NOTES ===
 
