@@ -756,6 +756,19 @@ footer {
 .footer-links a { color: var(--ink-soft); }
 .footer-links a:hover { color: var(--accent); }
 
+/* Instagram, under the email line. The icon comes from the JS sprite, so with
+   scripting off it simply doesn't draw — the handle still reads as the link. */
+.footer-social { margin-top: 10px; }
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink-soft);
+}
+.footer-social a:hover { color: var(--accent); }
+.footer-social .ill { opacity: 0.75; }
+.footer-social a:hover .ill { opacity: 1; }
+
 /* === PRIVACY BUTTON + POPUP === */
 .privacy-btn {
   position: absolute;

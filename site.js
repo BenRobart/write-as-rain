@@ -272,6 +272,14 @@
         '<path d="M7.8 9.4v5.2"/>' +
         '<path d="M20.4 9.2a3.4 3.4 0 0 1 0 5.6"/>' +
       '</symbol>',
+      // Instagram: frame, lens, and the corner light. Drawn rather than taken
+      // from the brand kit so it carries the same stroke weight as everything
+      // else in the footer instead of sitting there as a solid glyph.
+      '<symbol id="wr-instagram" viewBox="0 0 24 24">' +
+        '<rect x="3.4" y="3.4" width="17.2" height="17.2" rx="4.8"/>' +
+        '<circle cx="12" cy="12" r="4.1"/>' +
+        '<circle cx="17" cy="7" r="1.05"/>' +
+      '</symbol>',
       // The name, drawn: rain falling onto an open book. Homepage hero only.
       // Keep the viewBox origin at 0 0. <use> defaults to x="0" y="0", so a
       // symbol whose viewBox starts anywhere else gets placed that far off and
