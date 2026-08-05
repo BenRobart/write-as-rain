@@ -40,16 +40,20 @@ Free sample edit below.
 The line the whole site is built on, so anyone arriving from a post or the
 website gets the same sentence twice. Safest option.
 
-### B – what you get, plainly (149 characters)
+### B – what you get, plainly (141 characters)
 
 ```
 Manuscripts, applications, and business writing.
-One editor, not an agency. Flat prices, tracked changes.
+Edited or ghostwritten. One editor, flat prices.
 Free sample edit on your first 1,000 words.
 ```
 
 Answers "what do I get and what does it cost me" without a single adjective.
-Sits one character under the limit, so it cannot take an edit without a cut.
+"Edited or ghostwritten" is there because ghostwriting is now a headline
+service on the site and the bio was silent on it. Paying for those three words
+cost "not an agency" and "tracked changes", both of which the intro post's
+caption still says in full. Nine characters spare, so this one can take a small
+edit later without a rewrite.
 
 ### C – shortest, most personal (115 characters)
 
@@ -71,10 +75,15 @@ laptop.
 
 ## Link field
 
-`https://writeasrain.github.io`
+`https://writeasrain.github.io/ig_bio`
 
 Don't spend bio characters on the URL. The link field is separate and doesn't
 count against your 150.
+
+Not the bare homepage. `/ig_bio` is a redirect that forwards to the homepage
+with UTM tags attached, so bio traffic shows up in Google Analytics as its own
+`bio_link` campaign row instead of being lumped in with Direct. The visitor
+sees the homepage either way. See [REDIRECTS.md](../REDIRECTS.md).
 
 ## Notes
 
