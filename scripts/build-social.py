@@ -72,7 +72,7 @@ POSTS = [
         points=[
             "No payment, and no obligation afterwards",
             "No follow-up emails if you decide against it",
-            "A testimonial is easy to fake. This isn't",
+            "Proof you can check, unlike a testimonial",
         ],
         price="Free",
         dest="index.html",
@@ -127,7 +127,7 @@ POSTS = [
         points=[
             "Source files included, so you can update it yourself",
             "Print-ready PDF for KDP Print and IngramSpark",
-            "Already been rejected? I'll diagnose it free",
+            "Rejected files diagnosed free",
         ],
         price="From &pound;75",
         dest="ebook-formatting-kdp.html",
@@ -185,8 +185,8 @@ POSTS = [
         dest="phd-thesis-proofreading.html",
     ),
     dict(
-        n=12, slug="personal-statements", icon="wr-plane", group="Applications",
-        headline="The statement you\nwrote, made to\nwork harder",
+        n=12, slug="personal-statements", icon="wr-plane", group="Applications and careers",
+        headline="The statement you wrote,\nmade to work harder",
         body="UCAS, Oxbridge, medicine and dentistry, postgraduate, and US college essays. "
              "Your draft, edited and coached – never one written for you.",
         points=[
@@ -212,7 +212,7 @@ POSTS = [
     ),
     dict(
         n=14, slug="grant-writing", icon="wr-hand-heart", group="Business",
-        headline="Bids written the\nway assessors\nscore them",
+        headline="Bids written the way\nassessors score them",
         body="Small charities and SMEs without a fundraising team. Answered point by point "
              "against the funder's own guidance, because that's how it gets marked.",
         points=[
@@ -225,7 +225,7 @@ POSTS = [
     ),
     dict(
         n=15, slug="executive-ghostwriting", icon="wr-quill", group="Business",
-        headline="The posts you\nkeep meaning\nto write",
+        headline="The posts you keep\nmeaning to write",
         body="LinkedIn and newsletters in your voice, built from one recorded conversation "
              "a month. Nothing is published without your sign-off.",
         points=[
@@ -267,11 +267,11 @@ POSTS = [
     # the two get found by people in very different states of mind.
     dict(
         n=18, slug="eulogy", icon="wr-candle", group="Eulogies",
-        headline="You talk about\nthem. I write it.",
+        headline="You talk about them.\nI write it",
         body="Usually one phone call is enough. You don't need anything written down "
              "first, or to know yet what you want to say.",
         points=[
-            "Short notice is normal. If it's Friday, say so",
+            "Short notice is normal, so say if it's Friday",
             "Paced and marked so you can get through it",
             "Ring and ask first – the advice costs nothing",
         ],
