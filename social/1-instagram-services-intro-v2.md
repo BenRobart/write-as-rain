@@ -31,7 +31,7 @@ Business and occasions. Grant and bid writing, executive ghostwriting, documents
 
 Editing starts with a free sample edit. Send your first 1,000 words and I'll edit them properly, at no charge, before any money changes hands. Everything else starts with free advice about what you actually need, which is now and then less than you came for.
 
-You're dealing with me, not an agency. The person who answers your first email is the person doing the editing, and the one who replies when you query something six weeks later. Flat prices agreed up front. Tracked changes on everything, so you can reject every single thing I did.
+You're dealing with me, not an agency. The person who answers your first email is the person doing the editing, and the one who replies when you query something six weeks later. Flat prices agreed up front. Tracked changes on everything, so you can reject every single thing I did (not that you'll want to!).
 
 writeasrainuk@gmail.com
 ```
