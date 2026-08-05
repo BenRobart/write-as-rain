@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Redirect target for the Instagram bio link. GitHub Pages is a static host
+       with no server-side redirects, so this page does the work itself: it is
+       served at /ig_bio (and /ig_bio/) and sends the visitor to the homepage
+       carrying UTM tags, so the visit lands in Google Analytics as Organic
+       Social from the bio rather than as direct traffic. Three layers, in order
+       of speed:
+         1. location.replace() — fires immediately and, unlike location.href,
+            leaves no history entry, so "back" returns to Instagram rather than
+            bouncing the visitor through here again.
+         2. the meta refresh below — covers JavaScript being off or blocked.
+         3. the visible link — covers both of the above failing.
+       All three must carry the same query string, or the fallback paths would
+       quietly lose the attribution. Note the &amp; escaping: required in the
+       HTML attributes, wrong in the JavaScript string.
+       noindex keeps this out of search results; the canonical points at the
+       bare homepage, without the tags, so search engines don't index a tagged
+       duplicate of it. -->
+  <title>Write as Rain</title>
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://writeasrain.github.io/">
+  <meta http-equiv="refresh" content="0; url=/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio_link">
+  <script>window.location.replace('/?utm_source=instagram&utm_medium=social&utm_campaign=bio_link');</script>
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- Styled inline rather than via /styles.css: the page is only ever seen if
+       both redirects fail, and a stylesheet request would delay the ones that
+       don't. Colours are the site's --bg / --ink / --accent, light and dark. -->
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #faf5ec;
+      color: #2b2118;
+      font-family: Lora, Georgia, 'Times New Roman', serif;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      text-align: center;
+      padding: 2rem;
+    }
+    a { color: #6d1f2a; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #1a1613; color: #eee7de; }
+      a { color: #e08d92; }
+    }
+  </style>
+</head>
+<body>
+
+  <p>Taking you to <a href="/?utm_source=instagram&amp;utm_medium=social&amp;utm_campaign=bio_link">writeasrain.github.io</a>&hellip;</p>
+
+</body>
+</html>
