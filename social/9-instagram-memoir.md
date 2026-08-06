@@ -12,9 +12,9 @@ Everything in it happened, which feels like it ought to be enough, and isn't. A 
 
 Two different jobs here, priced differently, and people ask for the wrong one all the time.
 
-Editing a memoir you've already written uses the manuscript prices – from £350 to copyedit, from £400 if it needs structural work first. This is the one you want if the draft exists.
+Editing a memoir you've already written uses the standard manuscript prices, copyediting or developmental depending on what it needs. This is the one you want if the draft exists.
 
-Writing a life story from interviews is ghostwriting, from £3,500. Recorded conversations, transcribed and shaped into a book. Some are published. Most aren't, and are printed for a family who'll read it more often than any novel I've edited.
+Writing a life story from interviews is ghostwriting, and priced entirely differently. Recorded conversations, transcribed and shaped into a book. Some are published. Most aren't, and are printed for a family who'll read it more often than any novel I've edited.
 
 There's also the question nobody warns you about: what you're allowed to say about people who are still alive. I'll give you a straight answer on that, and it's usually less frightening than you expect.
 
@@ -25,11 +25,16 @@ writeasrainuk@gmail.com
 
 `https://writeasrain.github.io/ig_memoir` → `memoir-life-story.html`, campaign `memoir`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_memoir or link in bio!
+
 #MemoirWriting #Memoir #LifeStory #FamilyHistory #Autobiography #Genealogy #NonFiction #PersonalEssay #Ghostwriter #Ghostwriting #WritingCommunity #AmWriting #AuthorsOfInstagram #WritersOfInstagram #BookEditor #ManuscriptEditing #AmEditing #UKWriter #UKAuthors #WritingUK #LegacyProject #FamilyStories #WritingYourStory #TrueStory
 ```
 

@@ -12,9 +12,9 @@ Which means 150 words you wrote last, in a hurry, after eighteen months on the m
 
 Writing a blurb is a different craft from writing the novel. It isn't a summary, and the commonest mistake is treating it as one – explaining the plot until there's no question left worth turning the page for. A blurb withholds. A synopsis tells. Authors are trained by the submission process to do the second and then asked to do the first.
 
-What you get for £120: the back cover blurb, the longer Amazon description with its formatting done properly, a hook line, and an author bio. Two rounds of revisions.
+What you get: the back cover blurb, the longer Amazon description with its formatting done properly, a hook line, and an author bio. Two rounds of revisions.
 
-£90 if it's added to an edit I'm already doing, and £90 for each further book in the same series.
+It costs less added to an edit I'm already doing, and less again for each further book in the same series.
 
 Send me the one you've got and I'll tell you what's wrong with it, free, before you decide anything.
 
@@ -25,11 +25,16 @@ writeasrainuk@gmail.com
 
 `https://writeasrain.github.io/ig_blurb` → `book-blurb-writing.html`, campaign `blurb`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_blurb or link in bio!
+
 #BookBlurb #BookDescription #BookMarketing #AmazonKDP #KDP #SelfPublishing #SelfPub #IndieAuthor #IndiePublishing #BookLaunch #AuthorsOfInstagram #WritingCommunity #AmWriting #BookEditor #Copywriting #BackCoverBlurb #AuthorTips #UKAuthors #WritingUK #BookSales #PublishingTips #BlurbWriting #AmazonAuthor #BookPromo
 ```
 

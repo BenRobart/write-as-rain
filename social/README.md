@@ -103,9 +103,28 @@ what trips it.
   against Instagram's limit of 30. CamelCase, so screen readers say "Book Editor"
   rather than one long noise. Rotating a few between posts stops every post
   looking identical to the algorithm.
-- **Prices**: checked against `pricing.html` on 5 August 2026. Change a price on
-  the site and both the `POSTS` table and the captions go stale.
-- **Links**: never in the caption, since Instagram doesn't make them clickable.
-  Every post has a tracked `/ig_…` path for Story link stickers, listed above and
-  in [REDIRECTS.md](../REDIRECTS.md). Campaign tags can't be renamed once a post
-  is live without splitting the data in Analytics.
+- **Prices**: on the graphic only, never written out in the caption. The image
+  carries the number and the caption explains the thing, which means a price
+  change touches the `POSTS` table and nothing else. Captions saying "priced per
+  bid" or "it costs less alongside a CV" don't go stale when a figure moves.
+  Checked against `pricing.html` on 5 August 2026. Post 1 still quotes prices in
+  its caption because it is already published and doesn't get edited.
+- **Links**: never in the caption. The tracked `/ig_…` path goes at the top of
+  the first comment instead, followed by a blank line and then the hashtags, so
+  the whole comment pastes in one go:
+
+  ```
+  https://writeasrain.github.io/ig_thesis or link in bio!
+
+  #PhDLife #PhDChat …
+  ```
+
+  It isn't clickable there — nothing on Instagram is except the bio and Story
+  stickers — but a comment is where people look, it's short enough to copy, and
+  the bio catches everyone who won't. The same path works on a Story link
+  sticker, where it *is* tappable. Paths are listed above and in
+  [REDIRECTS.md](../REDIRECTS.md). Campaign tags can't be renamed once a post is
+  live without splitting the data in Analytics.
+
+  Post 18 says "or link in bio" with no exclamation mark. That is the only post
+  that differs and it is deliberate; the reason is in its own notes.

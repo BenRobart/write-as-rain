@@ -23,11 +23,16 @@ writeasrainuk@gmail.com
 
 `https://writeasrain.github.io/ig_free_sample` → `index.html`, campaign `free_sample`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_free_sample or link in bio!
+
 #FreeSampleEdit #Proofreading #Copyediting #BookEditor #ManuscriptEditing #AmEditing #Proofreader #EditorsOfInstagram #FreelanceEditor #ProofreadingServices #IndieAuthor #SelfPublishing #SelfPub #WritingCommunity #AmWriting #WritersOfInstagram #AuthorsOfInstagram #WritingTips #UKEditor #UKWriter #WritingUK #BookEditing #IndiePublishing #NewAuthor #WritingHelp
 ```
 

@@ -12,7 +12,7 @@ So we talk instead. I record the conversations, and I write the book from them, 
 
 Memoirs for publication. Family life stories that never go on sale, printed for people who share your surname. Business and expertise books. Novel collaborations, quoted separately.
 
-How it works. £450 buys a chapter plan and one real chapter, written from a first interview, so you can hear the voice before committing to anything. That comes off the total. From there it's £3,500 up to 30,000 words, £7,000 up to 60,000, paid in four stages rather than up front.
+How it works. It starts with a chapter plan and one real chapter, written from a first interview, so you can hear the voice before committing to a whole book. What that costs comes off the total. From there it's priced by length, and paid in four stages rather than up front.
 
 You own the manuscript and the copyright. I take no royalties, no rights, and no credit unless you'd like me to have some. If you'd rather nobody knew you didn't type it, nobody will.
 
@@ -24,11 +24,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_ghostwriting` → `book-ghostwriting.html`,
 campaign `ghostwriting`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_ghostwriting or link in bio!
+
 #Ghostwriter #Ghostwriting #GhostwriterForHire #MemoirWriting #Memoir #LifeStory #FamilyHistory #Autobiography #NonFiction #BusinessBook #WriteABook #BookCoach #AuthorsOfInstagram #WritingCommunity #AmWriting #SelfPublishing #IndiePublishing #UKWriter #UKAuthors #WritingUK #LegacyProject #BookWriting #Storytelling #YourStory
 ```
 

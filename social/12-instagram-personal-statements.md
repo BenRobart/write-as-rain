@@ -14,7 +14,7 @@ That's the whole discipline of a statement. A list of placements proves attendan
 
 I edit and coach your draft. I don't write it for you, and I'd turn down the work if you asked – partly because it's your name on it, and mostly because you have to sit in an interview and defend every sentence to someone whose job is spotting the ones you didn't write.
 
-UCAS, Oxbridge, medicine and dentistry, postgraduate, and US college essays. From £100, and the first look at your draft is free, including the verdict that it's already fine and you should stop redrafting it.
+UCAS, Oxbridge, medicine and dentistry, postgraduate, and US college essays. The first look at your draft is free, including the verdict that it's already fine and you should stop redrafting it.
 
 writeasrainuk@gmail.com
 ```
@@ -24,11 +24,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_statements` → `ucas-personal-statement.html`,
 campaign `statements`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_statements or link in bio!
+
 #PersonalStatement #PersonalStatementHelp #UCAS #UCAS2027 #UniversityApplication #ApplyingToUni #SixthForm #ALevels #StudyGram #MedSchool #MedicineApplication #DentistrySchool #Oxbridge #GraduateSchool #UniAdvice #StudentLife #UCASApplication #UniversityAdmissions #CollegeEssay #ApplicationSeason #AspiringMedic #UKUniversity #Admissions #FutureStudent
 ```
 

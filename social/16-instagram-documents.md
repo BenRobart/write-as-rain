@@ -12,9 +12,9 @@ You don't need an agency for that. You need somebody to take what you've got and
 
 Send it however it exists. Handwritten pages, photographs taken on your phone at an angle, a voice note, or a draft you've rewritten six times and now can't see. Back it comes in Word and PDF, ready to send.
 
-Letters, reports, policies, and personal documents. From £30. Longer or structured pieces are quoted flat, so you know the number before I start, and tidying up your own draft costs less than writing one from nothing.
+Letters, reports, policies, and personal documents. Longer or structured pieces are quoted flat, so you know the number before I start, and tidying up your own draft costs less than writing one from nothing.
 
-Two things worth saying. A letter written to a job advert is a cover letter and it's priced as one, at the same £30 – I'll tell you that rather than quietly charging you twice. And if what you actually need is a form filled in that anyone could fill in, I'll say so, because paying me for that would be a waste of your money.
+Two things worth saying. A letter written to a job advert is a cover letter and it's priced as one – I'll tell you that rather than quietly charging you twice. And if what you actually need is a form filled in that anyone could fill in, I'll say so, because paying me for that would be a waste of your money.
 
 writeasrainuk@gmail.com
 ```
@@ -24,11 +24,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_documents` → `document-writing-service.html`,
 campaign `documents`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_documents or link in bio!
+
 #WritingServices #LetterWriting #Copywriting #SmallBusinessUK #BusinessSupport #AdminSupport #VirtualAssistant #PolicyWriting #Charity #CommunityGroup #Trustees #Freelance #WritingHelp #ProfessionalWriting #DocumentWriting #ReportWriting #UKWriter #WritingUK #SmallBusiness #BusinessAdmin #FormalLetter #ComplaintLetter #WritingSupport #Paperwork
 ```
 

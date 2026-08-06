@@ -16,7 +16,7 @@ Surface features only. Spelling, punctuation, grammar, consistency, formatting, 
 
 You also get a record of every change, tracked, which you keep. If anyone ever asks what help you had, the answer is a file rather than a memory.
 
-From £250. Dissertation coaching is a separate thing at £50 a session – structure, argument, and planning, in conversation. Guidance and feedback, never ghostwriting. Your work stays yours in the only sense that matters.
+Dissertation coaching is a separate thing, priced by the session – structure, argument, and planning, in conversation. Guidance and feedback, never ghostwriting. Your work stays yours in the only sense that matters.
 
 writeasrainuk@gmail.com
 ```
@@ -26,11 +26,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_thesis` → `phd-thesis-proofreading.html`,
 campaign `thesis`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_thesis or link in bio!
+
 #PhDLife #PhDChat #ThesisWriting #Dissertation #AcademicWriting #AcademicEditing #Proofreading #ProofreadingServices #PostgradLife #Postgraduate #ResearchStudent #Viva #StudyGram #AcademicTwitter #MastersDegree #PhDStudent #ThesisSubmission #AcademicLife #UniLife #WritingUp #DissertationHelp #UKUniversity #StudentLife #Academia
 ```
 

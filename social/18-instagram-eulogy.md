@@ -19,7 +19,7 @@ Then I write it, and you get something you can actually get through on the day. 
 
 Short notice is normal. If the funeral is on Friday, say so. You won't be the first and it isn't a problem.
 
-From £100. And if you'd rather talk it through and then write it yourself, ring anyway – that conversation is free, and I'm glad to have it either way.
+And if you'd rather talk it through and then write it yourself, ring anyway – that conversation is free, and I'm glad to have it either way.
 
 writeasrainuk@gmail.com
 ```
@@ -28,15 +28,23 @@ writeasrainuk@gmail.com
 
 `https://writeasrain.github.io/ig_eulogy` → `eulogy-writing.html`, campaign `eulogy`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
+
+Note the missing exclamation mark, which every other post in the series has.
+It's the only difference and it is deliberate: see the notes.
 
 ```
+https://writeasrain.github.io/ig_eulogy or link in bio
+
 #Eulogy #EulogyWriting #Funeral #FuneralPlanning #FuneralService #Memorial #CelebrationOfLife #Tribute #SpeechWriter #SpeechWriting #PublicSpeaking #FuneralDirector #FuneralArrangements #OrderOfService #Remembrance #UKFuneral #WritingHelp #WritingServices #UKWriter #FuneralPoem
 ```
 
-Twenty rather than the twenty-five the other posts carry, and that is
+Twenty tags rather than the twenty-five the other posts carry, and that is
 deliberate. See the notes.
 
 ## Notes
@@ -49,7 +57,10 @@ deliberate. See the notes.
   task: eulogy, funeral planning, order of service. Fewer tags, no risk.
 - The caption opens with condolence and never once uses a sales line. No "get in
   touch today", no urgency, no exclamation mark. Anything that reads as
-  marketing here costs more than it earns.
+  marketing here costs more than it earns. That is also why the first comment
+  says "or link in bio" flat, where the other sixteen posts say "or link in
+  bio!" – an exclamation mark under a post about a funeral reads as cheerful,
+  and cheerful is the one thing this post cannot be.
 - The offer to talk it through for free and take no money is real and should
   stay. Some of these calls should end with the person writing it themselves,
   and that has to be an available outcome rather than a rhetorical flourish.

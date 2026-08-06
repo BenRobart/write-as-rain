@@ -18,7 +18,7 @@ Crime and thriller. A clue timeline, tracking what the reader knows and when, so
 
 Fantasy and sci-fi. A glossary built from your own text, so your spellings and your invented words become the standard I hold the manuscript to. Long books priced openly by the 1,000 words, because they're long and pretending otherwise helps nobody.
 
-Copyediting from £350. Free sample on your first 1,000 words.
+Free sample edit on your first 1,000 words, whichever of the three you write in.
 
 writeasrainuk@gmail.com
 ```
@@ -28,11 +28,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_genre_fiction` → `romance-editor.html`,
 campaign `genre_fiction`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_genre_fiction or link in bio!
+
 #BookEditor #Copyediting #LineEditing #ManuscriptEditing #AmEditing #RomanceBooks #RomanceAuthor #CrimeFiction #ThrillerBooks #FantasyBooks #SciFiBooks #GenreFiction #IndieAuthor #SelfPublishing #WritingCommunity #AmWriting #AuthorsOfInstagram #WritersOfInstagram #UKEditor #UKAuthors #SeriesBible #WorldBuilding #WritingCraft #AmEditingFiction
 ```
 

@@ -17,7 +17,7 @@ So it's written from a conversation. You talk, I ask questions, and what comes o
 
 Timed properly to your slot. Delivery notes in the margin with the pauses marked, because the pause after a good line is what makes it land, and almost everybody rushes it.
 
-Wedding, best man, groom, father of the bride, maid of honour, retirement. From £100.
+Wedding, best man, groom, father of the bride, maid of honour, retirement.
 
 And the thing people are too embarrassed to ask: yes, plenty of confident people get one written. Being able to run a meeting is not the same as standing up in front of everyone you have ever met, holding a piece of paper, while somebody's nan films it.
 
@@ -29,11 +29,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_speeches` → `wedding-speech-writer.html`,
 campaign `speeches`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_speeches or link in bio!
+
 #WeddingSpeech #BestManSpeech #GroomSpeech #FatherOfTheBride #MaidOfHonour #SpeechWriter #SpeechWriting #WeddingUK #WeddingPlanning #WeddingIdeas #WeddingDay #BestMan #Groomsmen #Bridesmaids #WeddingTips #PublicSpeaking #WeddingPrep #EngagedCouple #WeddingInspo #UKWedding #WeddingSeason #RetirementSpeech #WeddingHelp #Toast
 ```
 

@@ -14,7 +14,7 @@ So I write them the way they're marked. Point by point against the funder's own 
 
 Before any of that, a free go/no-go verdict. Send me the fund and what you do, and I'll tell you honestly whether you're eligible and competitive. Sometimes the answer is no, and a straight no on a Tuesday is worth more than a polished application that was never going to score.
 
-From £300 per bid. Editing a draft you've written costs less than writing from scratch. Never on commission, because an application written by someone paid only when you win is an application that overclaims.
+Priced per bid. Editing a draft you've written costs less than writing from scratch. Never on commission, because an application written by someone paid only when you win is an application that overclaims.
 
 writeasrainuk@gmail.com
 ```
@@ -24,11 +24,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_grants` → `grant-writing-charities.html`,
 campaign `grants`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_grants or link in bio!
+
 #GrantWriting #BidWriting #Fundraising #Charity #CharitySector #ThirdSector #NonProfit #Trustees #FundingBids #SocialEnterprise #CommunityGroup #VCSE #Tenders #NationalLottery #GrantFunding #CharityFundraising #SmallCharity #FundraisingIdeas #GrantApplication #Funding #CommunityFunding #VoluntarySector #UKCharity #CharityWork
 ```
 

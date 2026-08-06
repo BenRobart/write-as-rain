@@ -14,7 +14,7 @@ Changing field is the hardest CV problem there is. The experience is genuinely r
 
 What I do: rebuild it around the role you want, achievement-led rather than duty-led, and formatted so the software screening it first can actually read the thing. Plenty of good CVs are rejected by a parser before a human sees them, which is a stupid way to lose a job.
 
-CV rewrite £75. With your LinkedIn rewritten to tell the same story, £120. A tailored cover letter or NHS supporting statement is £30, or £95 alongside a CV.
+A CV rewrite on its own, or with your LinkedIn rewritten to tell the same story. Tailored cover letters and NHS supporting statements as well, and they cost less alongside a CV than on their own.
 
 Send me the CV you've got. I'll tell you what's stopping it, free.
 
@@ -25,11 +25,16 @@ writeasrainuk@gmail.com
 
 `https://writeasrain.github.io/ig_cv` → `cv-writing-career-change.html`, campaign `cv`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_cv or link in bio!
+
 #CVWriting #CVTips #CareerChange #JobSearch #JobHunting #JobSeekers #Resume #ResumeWriting #CoverLetter #LinkedInTips #LinkedInProfile #CareerAdvice #CareerCoach #InterviewTips #UKJobs #NHSJobs #JobApplication #CareerDevelopment #Recruitment #NewJob #CareerGoals #JobHunt #CVHelp #CareerBreak
 ```
 

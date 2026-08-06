@@ -16,7 +16,7 @@ Your science is not touched. Not the argument, not the claims, not the interpret
 
 Citation style made consistent across the whole manuscript. Formatting to the journal's author guidelines, which differ more than they have any right to. Response-to-reviewers letters polished, which is its own genre and a miserable one to write in a second language.
 
-From £15 per 1,000 words. Send 1,000 and I'll edit them free first, so you can see what changes before you commit a paper to it.
+Priced per 1,000 words. Send me 1,000 and I'll edit them free first, so you can see what changes before you commit a paper to it.
 
 writeasrainuk@gmail.com
 ```
@@ -26,11 +26,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_academic` → `journal-english-editing.html`,
 campaign `academic`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_academic or link in bio!
+
 #AcademicWriting #AcademicEditing #ESLWriting #PhDLife #PhDChat #AcademicTwitter #Research #Researcher #ScientificWriting #PaperWriting #AcademicPublishing #PeerReview #EarlyCareerResearcher #Postdoc #ManuscriptEditing #Proofreading #ProofreadingServices #ScienceCommunication #AcademicLife #JournalArticle #ResearchLife #PhDStudent #Academia #Manuscript
 ```
 

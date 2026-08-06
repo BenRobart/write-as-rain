@@ -14,7 +14,7 @@ The useful question isn't "is my novel good enough". It's which of the four thin
 
 If the query letter is wrong, nobody opens the chapter. If the opening chapter is wrong, they open it and stop on page two. If the synopsis is wrong, they like the writing and pass anyway, because they can't see where it's going. And if it's the book, no amount of polish on the other three will help – you'll hear that from me, and it's the cheapest thing I can tell you.
 
-£150 for the package: query letter in UK or US convention, a one-page synopsis, and a critique of your opening chapter.
+The package: query letter in UK or US convention, a one-page synopsis, and a critique of your opening chapter.
 
 writeasrainuk@gmail.com
 ```
@@ -24,11 +24,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_submission` → `agent-submission-help.html`,
 campaign `submission`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_submission or link in bio!
+
 #QueryLetter #AmQuerying #LiteraryAgent #Submissions #Synopsis #DebutNovel #AmWriting #WritingCommunity #WritersOfInstagram #AuthorsOfInstagram #AmEditing #BookEditor #ManuscriptEditing #WritingTips #FirstChapter #UnpublishedWriter #UKWriter #UKAuthors #WritingUK #NovelWriting #GettingPublished #QueryTips #WritingAdvice #AspiringAuthor
 ```
 

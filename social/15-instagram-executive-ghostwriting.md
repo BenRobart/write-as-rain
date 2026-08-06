@@ -12,7 +12,7 @@ That's the entire problem, and it isn't a writing problem.
 
 So we do one recorded conversation a month. Forty minutes, no preparation, and I ask questions until the things you actually think come out – which they do, in speech, far more readily than they ever do in a document.
 
-From that: four LinkedIn posts for £300, or eight, or four and an email newsletter, for £500. Written in your voice, from your own words, not assembled from whatever the industry is posting this quarter.
+From that: four LinkedIn posts a month, or eight, or four and an email newsletter. Written in your voice, from your own words, not assembled from whatever the industry is posting this quarter.
 
 Three things that stay true. Nothing is published without your sign-off, on every post, every time. I never need access to your account. And I take no credit anywhere – no byline, no portfolio entry, no "content by" in the footer. Nobody knows I exist, which is the point of the arrangement.
 
@@ -26,11 +26,16 @@ writeasrainuk@gmail.com
 `https://writeasrain.github.io/ig_exec_ghostwriting` →
 `executive-ghostwriting.html`, campaign `exec_ghostwriting`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_exec_ghostwriting or link in bio!
+
 #LinkedInTips #LinkedInGrowth #PersonalBranding #ThoughtLeadership #ContentStrategy #ContentMarketing #Ghostwriter #Ghostwriting #Founders #ExecutiveBranding #B2BMarketing #Newsletter #EmailMarketing #SmallBusinessUK #Entrepreneurs #CEO #Leadership #BusinessOwner #MarketingTips #LinkedInMarketing #B2B #BrandVoice #FounderLife #ContentCreation
 ```
 

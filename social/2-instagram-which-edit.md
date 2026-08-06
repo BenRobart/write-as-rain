@@ -8,11 +8,11 @@ the HTML.
 ```
 Three edits get sold as though they're the same thing. They aren't, and buying the wrong one is how a manuscript comes back disappointing.
 
-Developmental editing asks whether the book works. Structure, pace, whether the middle sags, whether the ending is earned. It's the only edit that can tell you a chapter shouldn't exist. £400.
+Developmental editing asks whether the book works. Structure, pace, whether the middle sags, whether the ending is earned. It's the only edit that can tell you a chapter shouldn't exist.
 
-Copyediting is sentence by sentence. Word choice, consistency, clarity, and the factual slips – the eyes that changed colour, the Tuesday that happens twice. You get a style sheet with it, so book two matches book one. £350.
+Copyediting is sentence by sentence. Word choice, consistency, clarity, and the factual slips – the eyes that changed colour, the Tuesday that happens twice. You get a style sheet with it, so book two matches book one.
 
-Proofreading is the last look, after everything else is settled. Spelling, punctuation, page numbers, widows and orphans, the running heads nobody checks. £250.
+Proofreading is the last look, after everything else is settled. Spelling, punctuation, page numbers, widows and orphans, the running heads nobody checks.
 
 The order matters. Proofreading a draft you're still rewriting is money spent on sentences you're about to delete, and I'll say so if that's what you've asked for.
 
@@ -26,15 +26,18 @@ writeasrainuk@gmail.com
 ## Link
 
 `https://writeasrain.github.io/ig_which_edit` → `proofreading-vs-copyediting.html`,
-campaign `which_edit`. See the note at the foot of
-[1-instagram-services-intro-v2.md](1-instagram-services-intro-v2.md) for why post
-links live on Story stickers rather than in the caption.
+campaign `which_edit`.
 
-## Hashtags, as a first comment
+## First comment
 
-None go in the caption.
+Paste all of this as one comment under the post. The link isn't clickable in a
+comment – nothing on Instagram is except the bio and Story stickers – but it's
+short enough to copy by hand, and "or link in bio" catches everyone who won't
+bother.
 
 ```
+https://writeasrain.github.io/ig_which_edit or link in bio!
+
 #Proofreading #Copyediting #DevelopmentalEditing #LineEditing #BookEditor #ManuscriptEditing #AmEditing #Proofreader #CopyEditor #EditorsOfInstagram #FreelanceEditor #ProofreadingServices #IndieAuthor #SelfPublishing #WritingCommunity #AmWriting #WritersOfInstagram #AuthorsOfInstagram #WritingTips #UKEditor #UKWriter #WritingUK #BookEditing #EditingTips #WritingAdvice
 ```
 
